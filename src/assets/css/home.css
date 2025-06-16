@@ -8,6 +8,15 @@ body{
 }
 
 
+.build_button{
+background-color:rgb(120 235 95 / 100%) ;
+padding: 2rem;
+border-radius: 4rem;
+position: absolute;
+top:4% ;
+left: 2%;
+}
+
 .search_bar{
 
     border-radius: 2rem;

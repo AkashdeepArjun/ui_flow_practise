@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         
             
   try {
-      const res = await fetch(`index.php?dest=${view}`);
+      const res = await fetch(`index.php?dest=${view}&partial=1`);
       if (!res.ok) throw new Error("view not found");
       const html = await res.text();
       container.innerHTML = html;
@@ -77,9 +77,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
 
     
-    
-    history.replaceState({lastview:DEFAULT_VIEW},"","/"+DEFAULT_VIEW);
-    loadview(DEFAULT_VIEW);
+    // const view = history.state?.lastview || DEFAULT_VIEW 
+   const view =getPageFromUrl(location.href) 
+    history.replaceState({lastview:view},"","/"+view);
+    loadview(view);
 
 
 
