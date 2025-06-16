@@ -7,6 +7,15 @@ $js_path=BASE_URL.'assets/js/router.js';
 $js_ver=file_exists($js_path)?filemtime($js_path):time();
 
 $view = $_GET['dest']??'popular_buids';
+
+if($view==='new_build'){
+
+    require_once PROJECT_ROOT.'/views/new_build.php';
+    exit;
+
+}
+
+
 $partial = isset($_GET['partial']);
 if($partial){
 
@@ -46,9 +55,9 @@ if($partial){
 
 
                 
-            </nav>
-            
-            <button type="" class="build_button">BUILD NEW</button>
+            </nav> 
+                
+            <a href="index.php?dest=new_build" style="text-decoration: none;" target="_blank"><button type="" class="build_button">BUILD NEW</button></a>
             
         </div>
 
