@@ -8,6 +8,32 @@ body{
 }
 
 
+.main-content{
+
+    transition: opacity 300ms ease;
+    opacity: 1;
+
+}
+
+.fadeout{
+    opacity: 0;
+}
+
+#loader{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: .125rem;
+    padding: 1rem 2 rem;
+    background: white;
+    border: 0.125rem solid gray;
+    display: none;
+
+}
+
+
 .build_button{
 background-color:rgb(120 235 95 / 100%) ;
 padding: 2rem;

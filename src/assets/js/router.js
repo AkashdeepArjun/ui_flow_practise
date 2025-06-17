@@ -1,8 +1,10 @@
 console.log("script load success");
 document.addEventListener("DOMContentLoaded",()=>{
 
-    const container = document.querySelector('.main_content');
+    const container = document.querySelector('.main-content');
     const DEFAULT_VIEW ="popular_builds";
+    const loader = document.getElementById('loader');
+
 
     const getPageFromUrl = (url)=>{
             
@@ -22,10 +24,15 @@ document.addEventListener("DOMContentLoaded",()=>{
         
             
   try {
-      const res = await fetch(`index.php?dest=${view}&partial=1`);
-      if (!res.ok) throw new Error("view not found");
-      const html = await res.text();
-      container.innerHTML = html;
+        loader.style.display='block';
+        container.classList.add('fadeout');
+            await new Promise((r)=>setTimeout(r,300));
+            const res = await fetch(`index.php?dest=${view}&partial=1`);
+            if (!res.ok) throw new Error("view not found");
+            const html = await res.text();
+            container.innerHTML = html;
+            container.classList.remove('fadeout');
+            setTimeout(()=>loader.style.display="none",200);
     } catch (err) {
       container.innerHTML = "<h1>404 Page Not Found</h1>";
     }

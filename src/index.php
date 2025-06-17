@@ -60,8 +60,11 @@ if($partial){
             <a href="index.php?dest=new_build" style="text-decoration: none;" target="_blank"><button type="" class="build_button">BUILD NEW</button></a>
             
         </div>
-
-        <main class="main_content" style="justify-content: center; justify-items: center; align-items: center; align-content: center;">
+        
+        <div id="loader">
+            
+        </div>
+        <main class="main-content" style="justify-content: center; justify-items: center; align-items: center; align-content: center;">
 
            <?php
              
