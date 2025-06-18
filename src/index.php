@@ -38,7 +38,7 @@ if($partial){
     </head>
     <body>
         <div class="head_nav">
-            <nav>
+            <nav >
                 
 
                 <ul class="menu">
@@ -64,7 +64,7 @@ if($partial){
         <div id="loader">
             
         </div>
-        <main class="main-content" style="justify-content: center; justify-items: center; align-items: center; align-content: center;">
+        <main class="main-content">
 
            <?php
              

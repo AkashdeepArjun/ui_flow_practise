@@ -1,19 +1,93 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
 html{
     font-size: 8px;
 }
 
+html,body{
 
-body{
-    background-color:#55eb8c;
+/* background-color: yellow; */
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 3fr;
+/* z-index: 25; */
+height: 100vh;
+width: 100vw;
 }
+.head_nav{
+grid-row: 1 /2;
+/* position: fixed; */
+/* top: 0; */
+/* z-index: 100; */
+width: 100%;
+/* flex: 0 0 25%; */
+background-color:#5f1e6eff ;
+color: white;
+    place-content: end;
+/* flex-grow: 1; */
+}
+
 
 
 .main-content{
+    /* position: absolute; */
+    /* position:absolute;  */
 
+    display: flex;
+    /* height: 100%; */
+    flex-direction: column;
+   /* align-content: center; */
+    justify-content: center;
     transition: opacity 300ms ease;
     opacity: 1;
+    /* z-index:100; */
+    grid-row: 2/3;
+    /* background-color: pink; */
+    background-color: green;
+    color: white;
+    
 
 }
+
+
+
+.skeleton{
+
+    position: relative;
+    background:#e0e0e0;
+    border-radius: .25rem;
+    height: 1rem;
+    margin-bottom: 0.5rem;
+    /* top: 0; left: 0; */
+    overflow: hidden;
+    width: 80%;
+}
+
+.skeleton::after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background: linear-gradient(90deg,transparent,pink,transparent);
+    animation: shimmer 1.2s infinite;
+    
+
+
+}
+@keyframes shimmer{
+0%{transform: translateX(-100%);}
+100%{ transform: translateX(100%);}
+}
+
+
+
+
+
+
 
 .fadeout{
     opacity: 0;
@@ -58,23 +132,15 @@ left: 2%;
 }
 
 
-.head_nav{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 25%;
-background-color: purple;
-color: white;
-}
+
 
 .menu{
 
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom:0;
     display: flex;
     list-style: none;
-    flex-flow:row nowrap;
+    flex-direction: row;
     color: inherit;
     gap: 4rem;
 

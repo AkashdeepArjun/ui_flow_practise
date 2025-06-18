@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded",()=>{
     const DEFAULT_VIEW ="popular_builds";
     const loader = document.getElementById('loader');
 
+    const skeleton_temp=`
+    <div class="skeleton" ></div> 
+    <div class="skeleton" ></div> 
+    <div class="skeleton" ></div> 
+`;
+
 
     const getPageFromUrl = (url)=>{
             
@@ -20,10 +26,12 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     }
 
-    const loadview = async(view)=>{ 
+    const loadview = async(view)=>{
         
             
   try {
+        console.log("bijla")
+        container.innerHTML=skeleton_temp;
         loader.style.display='block';
         container.classList.add('fadeout');
             await new Promise((r)=>setTimeout(r,300));
