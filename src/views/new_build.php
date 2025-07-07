@@ -2,6 +2,8 @@
 
 $css=BASE_URL.'/assets/css/new_build.css';
 $css_ver=file_exists($css)?filemtime($css):time();
+$js=BASE_URL.'/assets/js/new_build.js';
+$js_ver=file_exists($js)?filemtime($js):time();
 ?>
 
 
@@ -14,23 +16,23 @@ $css_ver=file_exists($css)?filemtime($css):time();
         <title></title>
         <link href="<?=BASE_URL?>assets/css/new_build.css?v=<?=$css_ver?>" rel="stylesheet">
     </head>
-<body>
+    <body>
 
     <div class="cont">
 
-        <div class="case">
+        <div class="case part" data-part-type="case">
 
             <h1>CASE</h1>
             
         </div>
 
-        <div class="ssd">
+        <div class="ssd part" data-part-type="ssd">
         
             <h1>SSD</h1>
 
         </div>
 
-        <div class="ram">
+        <div class="ram part" data-part-type="ram">
             <h1>RAM</h1>
 
 
@@ -38,33 +40,46 @@ $css_ver=file_exists($css)?filemtime($css):time();
        
        
        
-        <div class="motherboard">
+        <div class="motherboard part" data-part-type="motherboard">
 
             <h1>MOTHERBOARD</h1>
 
         </div>
 
-        <div class="psu">
+        <div class="psu part" data-part-type="psu">
            <h1>POWER SUPPLY</h1> 
         </div>
 
-        <div class="cpu">
+        <div class="cpu part" data-part-type="cpu">
            <h1>CPU</h1> 
         </div>
 
 
-        <div class="gpu">
+        <div class="gpu part" data-part-type="gpu"> 
            <h1>GPU</h1> 
         </div>
+        </div>
+    
+        <div class="backdrop hidden" id="backdrop">
+            
+            <div class="dialog">
+            <p class="title" style="font-size: 5rem;"></p>
+            <input type="text" name="" value="" placeholder="Search ..." id="search"/>
+            <div id="item-grid" class="grid"></div>
+            <button id="close_dialog">
+                Close
+            </button>
+                
+            </div>
 
 
-
-
-    </div>
+            
+        </div>
     
 
 
-
+<script src="<?=BASE_URL?>assets/js/new_build.js?v=<?=$js_ver?>">
+</script>
 
      
     </body>

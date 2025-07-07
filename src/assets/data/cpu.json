@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cpu1",
+    "name": "Intel Core Ultra 7 265K",
+    "socket": "LGA1851",
+    "has_igpu": true,
+    "brand": "Intel",
+    "logo": "/assets/images/intel.png"
+  },
+  {
+    "id": "cpu2",
+    "name": "Intel Core Ultra 7 265F",
+    "socket": "LGA1851",
+    "has_igpu": false,
+    "brand": "Intel",
+    "logo": "/assets/images/intel.png"
+  },
+  {
+    "id": "cpu3",
+    "name": "Intel Core Ultra 5 245K",
+    "socket": "LGA1851",
+    "has_igpu": true,
+    "brand": "Intel",
+    "logo": "/assets/images/intel.png"
+  }
+]

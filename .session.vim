@@ -13,20 +13,22 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +8 src/routes/index.php
-badd +39 src/index.php
-badd +19 src/views/new_build.php
-badd +9 src/assets/css/home.css
-badd +9 src/assets/js/router.js
+badd +76 src/views/new_build.php
+badd +1 src/assets/css/new_build.css
+badd +122 src/assets/js/new_build.js
+badd +1 src/assets/data/motherboard.json
 argglobal
 %argdel
-edit src/assets/js/router.js
+edit src/assets/css/new_build.css
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
-1wincmd h
+wincmd _ | wincmd |
+vsplit
+2wincmd h
+wincmd w
 wincmd w
 let &splitbelow = s:save_splitbelow
 let &splitright = s:save_splitright
@@ -38,8 +40,22 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 wincmd =
+tcd ~/Projects/UI_practise
 argglobal
-balt src/index.php
+enew
+file ~/Projects/UI_practise/neo-tree\ filesystem\ \[1]
+balt ~/Projects/UI_practise/src/views/new_build.php
+setlocal foldmethod=manual
+setlocal foldexpr=0
+setlocal foldmarker={{{,}}}
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldenable
+wincmd w
+argglobal
+balt ~/Projects/UI_practise/src/views/new_build.php
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -50,20 +66,19 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 9 - ((8 * winheight(0) + 17) / 35)
+let s:l = 164 - ((12 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 9
-normal! 0
-lcd ~/Projects/UI_practise
+keepjumps 164
+normal! 017|
 wincmd w
 argglobal
-if bufexists(fnamemodify("~/Projects/UI_practise/src/assets/css/home.css", ":p")) | buffer ~/Projects/UI_practise/src/assets/css/home.css | else | edit ~/Projects/UI_practise/src/assets/css/home.css | endif
+if bufexists(fnamemodify("~/Projects/UI_practise/src/assets/js/new_build.js", ":p")) | buffer ~/Projects/UI_practise/src/assets/js/new_build.js | else | edit ~/Projects/UI_practise/src/assets/js/new_build.js | endif
 if &buftype ==# 'terminal'
-  silent file ~/Projects/UI_practise/src/assets/css/home.css
+  silent file ~/Projects/UI_practise/src/assets/js/new_build.js
 endif
-balt ~/Projects/UI_practise/src/assets/js/router.js
+balt ~/Projects/UI_practise/src/assets/data/motherboard.json
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -74,15 +89,14 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 25 - ((18 * winheight(0) + 17) / 35)
+let s:l = 122 - ((15 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 25
+keepjumps 122
 normal! 0
-lcd ~/Projects/UI_practise
 wincmd w
-2wincmd w
+3wincmd w
 wincmd =
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'

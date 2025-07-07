@@ -1,0 +1,23 @@
+[
+  {
+    "id": "mb1",
+    "brand": "Asus",
+    "name": "ASUS TUF B860-PLUS WIFI",
+    "socket": "LGA1851",
+    "chipset": "B860"
+  },
+  {
+    "id": "mb2",
+    "brand": "Asus",
+    "name": "ASUS TUF B860M-PLUS WIFI",
+    "socket": "LGA1851",
+    "chipset": "B860"
+  },
+  {
+    "id": "mb3",
+    "brand": "Asus",
+    "name": "ASUS PRIME H810M-A",
+    "socket": "LGA1851",
+    "chipset": "H810"
+  }
+]
