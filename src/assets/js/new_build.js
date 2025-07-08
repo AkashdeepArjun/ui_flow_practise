@@ -177,6 +177,7 @@ const casing = document.querySelector('.case');
             card.className="component";
             card.dataset.id=part.id;
             card.innerHTML=`
+            <img src =${part.logo} class="logo">
             <div class="brand" >${part.brand}</div>
             <div class="modal"  >${part.name}</div>
     `
@@ -184,7 +185,13 @@ const casing = document.querySelector('.case');
             card.addEventListener("click",()=>{           
             cpu.classList.remove("okay","not_okay");
             motherboard.classList.remove("not_okay","okay");
-                choice_source.innerText=part.name;
+                choice_source.innerHTML=`
+                <div class ="selected_part">   
+                    <img src =${part.logo} class="logo">
+                    <h1 class="modal">${part.name}</h1>
+
+                </div>
+`   
                 selected_parts[part_type]=part;
                 if(selected_parts.cpu && selected_parts.motherboard){
                     console.log(selected_parts.cpu);

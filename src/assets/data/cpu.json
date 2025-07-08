@@ -5,7 +5,7 @@
     "socket": "LGA1851",
     "has_igpu": true,
     "brand": "Intel",
-    "logo": "/assets/images/intel.png"
+    "logo": "/assets/images/intel.svg"
   },
   {
     "id": "cpu2",
@@ -13,7 +13,7 @@
     "socket": "LGA1851",
     "has_igpu": false,
     "brand": "Intel",
-    "logo": "/assets/images/intel.png"
+    "logo": "/assets/images/intel.svg"
   },
   {
     "id": "cpu3",
@@ -21,6 +21,6 @@
     "socket": "LGA1851",
     "has_igpu": true,
     "brand": "Intel",
-    "logo": "/assets/images/intel.png"
+    "logo": "/assets/images/intel.svg"
   }
 ]
