@@ -1,26 +1,152 @@
 [
   {
-    "id": "cpu1",
-    "name": "Intel Core Ultra 7 265K",
-    "socket": "LGA1851",
+    "name": "Intel Core i9-14900K",
+    "socket": "LGA1700",
     "has_igpu": true,
     "brand": "Intel",
-    "logo": "/assets/images/intel.svg"
+    "tdp": 125,
+    "chipsets": [
+      "Z790",
+      "B760"
+    ],
+    "cooler_mount": "LGA1700",
+    "pci_lanes": 20,
+    "id": "intel_core_i9-14900k_0",
+    "released_year": 2020
   },
   {
-    "id": "cpu2",
-    "name": "Intel Core Ultra 7 265F",
-    "socket": "LGA1851",
+    "name": "Intel Core i9-14900K",
+    "socket": "LGA1700",
+    "has_igpu": true,
+    "brand": "Intel",
+    "tdp": 125,
+    "chipsets": [
+      "Z790",
+      "B760"
+    ],
+    "cooler_mount": "LGA1700",
+    "pci_lanes": 20,
+    "id": "intel_core_i9-14900k_1",
+    "released_year": 2021
+  },
+  {
+    "name": "AMD Ryzen 9 7950X",
+    "socket": "AM5",
     "has_igpu": false,
-    "brand": "Intel",
-    "logo": "/assets/images/intel.svg"
+    "brand": "AMD",
+    "tdp": 170,
+    "chipsets": [
+      "X670",
+      "B650"
+    ],
+    "cooler_mount": "AM5",
+    "pci_lanes": 24,
+    "id": "amd_ryzen_9_7950x_2",
+    "released_year": 2024
   },
   {
-    "id": "cpu3",
-    "name": "Intel Core Ultra 5 245K",
-    "socket": "LGA1851",
+    "name": "AMD Ryzen 9 7950X",
+    "socket": "AM5",
+    "has_igpu": false,
+    "brand": "AMD",
+    "tdp": 170,
+    "chipsets": [
+      "X670",
+      "B650"
+    ],
+    "cooler_mount": "AM5",
+    "pci_lanes": 24,
+    "id": "amd_ryzen_9_7950x_3",
+    "released_year": 2024
+  },
+  {
+    "name": "AMD Ryzen 9 7950X",
+    "socket": "AM5",
+    "has_igpu": false,
+    "brand": "AMD",
+    "tdp": 170,
+    "chipsets": [
+      "X670",
+      "B650"
+    ],
+    "cooler_mount": "AM5",
+    "pci_lanes": 24,
+    "id": "amd_ryzen_9_7950x_4",
+    "released_year": 2022
+  },
+  {
+    "name": "AMD Ryzen 9 7950X",
+    "socket": "AM5",
+    "has_igpu": false,
+    "brand": "AMD",
+    "tdp": 170,
+    "chipsets": [
+      "X670",
+      "B650"
+    ],
+    "cooler_mount": "AM5",
+    "pci_lanes": 24,
+    "id": "amd_ryzen_9_7950x_5",
+    "released_year": 2025
+  },
+  {
+    "name": "Intel Core i9-14900K",
+    "socket": "LGA1700",
     "has_igpu": true,
     "brand": "Intel",
-    "logo": "/assets/images/intel.svg"
+    "tdp": 125,
+    "chipsets": [
+      "Z790",
+      "B760"
+    ],
+    "cooler_mount": "LGA1700",
+    "pci_lanes": 20,
+    "id": "intel_core_i9-14900k_6",
+    "released_year": 2021
+  },
+  {
+    "name": "Intel Core i9-14900K",
+    "socket": "LGA1700",
+    "has_igpu": true,
+    "brand": "Intel",
+    "tdp": 125,
+    "chipsets": [
+      "Z790",
+      "B760"
+    ],
+    "cooler_mount": "LGA1700",
+    "pci_lanes": 20,
+    "id": "intel_core_i9-14900k_7",
+    "released_year": 2023
+  },
+  {
+    "name": "Intel Core i9-14900K",
+    "socket": "LGA1700",
+    "has_igpu": true,
+    "brand": "Intel",
+    "tdp": 125,
+    "chipsets": [
+      "Z790",
+      "B760"
+    ],
+    "cooler_mount": "LGA1700",
+    "pci_lanes": 20,
+    "id": "intel_core_i9-14900k_8",
+    "released_year": 2022
+  },
+  {
+    "name": "AMD Ryzen 9 7950X",
+    "socket": "AM5",
+    "has_igpu": false,
+    "brand": "AMD",
+    "tdp": 170,
+    "chipsets": [
+      "X670",
+      "B650"
+    ],
+    "cooler_mount": "AM5",
+    "pci_lanes": 24,
+    "id": "amd_ryzen_9_7950x_9",
+    "released_year": 2023
   }
 ]

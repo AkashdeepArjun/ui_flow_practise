@@ -119,18 +119,27 @@ const casing = document.querySelector('.case');
 
 
 
-    const cpu_mb_compat = (cpu,motherboard,gpu_selected=false)=>{
+    const cpu_mb_compat = (cpu,motherboard)=>{
 
         
         const errors=[]
+        const socket_match = cpu.socket===motherboard.socket;
+        const chipset_okay =cpu.chipsets.includes(motherboard.chipset);
+        const tdp_okay =cpu.tdp<=motherboard.max_tdp;
 
-        if(cpu.socket!=motherboard.socket){
-            errors.push("CPU AND motherboard SOCKETS mismatch");
+        if(!socket_match){
+            errors.push("SOCKETS DOES NOT MATCH");
+
+        }
+        if(!chipset_okay){
+            errors.push("CHIPSET NOT SUPPORTED");
+        }
+        
+        if (!tdp_okay) {
+            
+            errors.push("CPU ON  MOTHERBOARD WILL BOTTLE NECK");
         }
 
-        if(!cpu.has_igpu && !gpu_selected){
-            errors.push("CPU does not have inbuilt gpu and gpu not selected ");
-        }
 
 
         return {
@@ -138,7 +147,6 @@ const casing = document.querySelector('.case');
             issues:errors
         }
 
-//lets say i chose chpu hav has_igpu and not selectes gpu its says inokay which is supposed to becase when cu does not have igpu and gpu not selected 
 
 
     }

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Corsair RM850x",
+    "wattage": 850,
+    "efficiency": "80+ Gold",
+    "brand": "Corsair",
+    "id": "corsair_rm850x_0",
+    "released_year": 2024
+  },
+  {
+    "name": "Corsair RM850x",
+    "wattage": 850,
+    "efficiency": "80+ Gold",
+    "brand": "Corsair",
+    "id": "corsair_rm850x_1",
+    "released_year": 2025
+  },
+  {
+    "name": "Corsair RM850x",
+    "wattage": 850,
+    "efficiency": "80+ Gold",
+    "brand": "Corsair",
+    "id": "corsair_rm850x_2",
+    "released_year": 2024
+  },
+  {
+    "name": "Corsair RM850x",
+    "wattage": 850,
+    "efficiency": "80+ Gold",
+    "brand": "Corsair",
+    "id": "corsair_rm850x_3",
+    "released_year": 2022
+  },
+  {
+    "name": "Seasonic Focus GX-750",
+    "wattage": 750,
+    "efficiency": "80+ Gold",
+    "brand": "Seasonic",
+    "id": "seasonic_focus_gx-750_4",
+    "released_year": 2020
+  },
+  {
+    "name": "Seasonic Focus GX-750",
+    "wattage": 750,
+    "efficiency": "80+ Gold",
+    "brand": "Seasonic",
+    "id": "seasonic_focus_gx-750_5",
+    "released_year": 2020
+  },
+  {
+    "name": "Seasonic Focus GX-750",
+    "wattage": 750,
+    "efficiency": "80+ Gold",
+    "brand": "Seasonic",
+    "id": "seasonic_focus_gx-750_6",
+    "released_year": 2020
+  },
+  {
+    "name": "Corsair RM850x",
+    "wattage": 850,
+    "efficiency": "80+ Gold",
+    "brand": "Corsair",
+    "id": "corsair_rm850x_7",
+    "released_year": 2021
+  },
+  {
+    "name": "Seasonic Focus GX-750",
+    "wattage": 750,
+    "efficiency": "80+ Gold",
+    "brand": "Seasonic",
+    "id": "seasonic_focus_gx-750_8",
+    "released_year": 2021
+  },
+  {
+    "name": "Seasonic Focus GX-750",
+    "wattage": 750,
+    "efficiency": "80+ Gold",
+    "brand": "Seasonic",
+    "id": "seasonic_focus_gx-750_9",
+    "released_year": 2023
+  }
+]
