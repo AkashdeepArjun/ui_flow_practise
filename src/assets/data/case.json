@@ -9,6 +9,7 @@
       "ITX"
     ],
     "brand": "Fractal",
+    "logo": "/assets/images/fractal.svg",
     "id": "fractal_design_meshify_c_0",
     "released_year": 2025
   },
@@ -22,6 +23,7 @@
       "ITX"
     ],
     "brand": "NZXT",
+    "logo": "/assets/images/nzxt.svg",
     "id": "nzxt_h510_1",
     "released_year": 2025
   },
@@ -35,6 +37,7 @@
       "ITX"
     ],
     "brand": "Fractal",
+    "logo": "/assets/images/fractal.svg",
     "id": "fractal_design_meshify_c_2",
     "released_year": 2022
   },
@@ -48,6 +51,7 @@
       "ITX"
     ],
     "brand": "Fractal",
+    "logo": "/assets/images/fractal.svg",
     "id": "fractal_design_meshify_c_3",
     "released_year": 2023
   },
@@ -61,6 +65,7 @@
       "ITX"
     ],
     "brand": "Fractal",
+    "logo": "/assets/images/fractal.svg",
     "id": "fractal_design_meshify_c_4",
     "released_year": 2024
   },
@@ -74,6 +79,7 @@
       "ITX"
     ],
     "brand": "NZXT",
+    "logo": "/assets/images/nzxt.svg",
     "id": "nzxt_h510_5",
     "released_year": 2024
   },
@@ -87,6 +93,7 @@
       "ITX"
     ],
     "brand": "NZXT",
+    "logo": "/assets/images/nzxt.svg",
     "id": "nzxt_h510_6",
     "released_year": 2025
   },
@@ -100,6 +107,7 @@
       "ITX"
     ],
     "brand": "Fractal",
+    "logo": "/assets/images/fractal.svg",
     "id": "fractal_design_meshify_c_7",
     "released_year": 2025
   },
@@ -113,6 +121,7 @@
       "ITX"
     ],
     "brand": "Fractal",
+    "logo": "/assets/images/fractal.svg",
     "id": "fractal_design_meshify_c_8",
     "released_year": 2024
   },
@@ -126,6 +135,7 @@
       "ITX"
     ],
     "brand": "Fractal",
+    "logo": "/assets/images/fractal.svg",
     "id": "fractal_design_meshify_c_9",
     "released_year": 2024
   }
