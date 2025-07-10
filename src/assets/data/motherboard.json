@@ -1,132 +1,132 @@
 [
   {
-    "name": "MSI MPG B650 CARBON",
-    "socket": "AM5",
-    "chipset": "B650",
-    "brand": "MSI",
-    "max_tdp": 170,
-    "cooler_mounts": [
-      "AM5"
-    ],
-    "pci_slots": 20,
-    "id": "msi_mpg_b650_carbon_0",
-    "released_year": 2021
+    "name": "ASUS ROG STRIX Z790-E",
+    "socket": "LGA1700",
+    "chipset": "Z790",
+    "brand": "Asus",
+    "logo": "/assets/images/asus.svg",
+    "max_tdp": 150,
+    "cooler_mounts": ["LGA1700"],
+    "pci_slots": 24,
+    "id": "asus_rog_strix_z790_e_0",
+    "released_year": 2020,
+    "ram_type": "DDR4"
   },
   {
     "name": "ASUS ROG STRIX Z790-E",
     "socket": "LGA1700",
     "chipset": "Z790",
     "brand": "Asus",
+    "logo": "/assets/images/asus.svg",
     "max_tdp": 150,
-    "cooler_mounts": [
-      "LGA1700"
-    ],
+    "cooler_mounts": ["LGA1700"],
     "pci_slots": 24,
-    "id": "asus_rog_strix_z790-e_1",
-    "released_year": 2025
+    "id": "asus_rog_strix_z790_e_1",
+    "released_year": 2023,
+    "ram_type": "DDR5"
+  },
+  {
+    "name": "ASUS ROG STRIX Z790-E",
+    "socket": "LGA1700",
+    "chipset": "Z790",
+    "brand": "Asus",
+    "logo": "/assets/images/asus.svg",
+    "max_tdp": 150,
+    "cooler_mounts": ["LGA1700"],
+    "pci_slots": 24,
+    "id": "asus_rog_strix_z790_e_2",
+    "released_year": 2020,
+    "ram_type": "DDR5"
+  },
+  {
+    "name": "ASUS ROG STRIX Z790-E",
+    "socket": "LGA1700",
+    "chipset": "Z790",
+    "brand": "Asus",
+    "logo": "/assets/images/asus.svg",
+    "max_tdp": 150,
+    "cooler_mounts": ["LGA1700"],
+    "pci_slots": 24,
+    "id": "asus_rog_strix_z790_e_3",
+    "released_year": 2022,
+    "ram_type": "DDR4"
   },
   {
     "name": "MSI MPG B650 CARBON",
     "socket": "AM5",
     "chipset": "B650",
     "brand": "MSI",
+    "logo": "/assets/images/msi.svg",
     "max_tdp": 170,
-    "cooler_mounts": [
-      "AM5"
-    ],
-    "pci_slots": 20,
-    "id": "msi_mpg_b650_carbon_2",
-    "released_year": 2023
-  },
-  {
-    "name": "MSI MPG B650 CARBON",
-    "socket": "AM5",
-    "chipset": "B650",
-    "brand": "MSI",
-    "max_tdp": 170,
-    "cooler_mounts": [
-      "AM5"
-    ],
-    "pci_slots": 20,
-    "id": "msi_mpg_b650_carbon_3",
-    "released_year": 2025
-  },
-  {
-    "name": "MSI MPG B650 CARBON",
-    "socket": "AM5",
-    "chipset": "B650",
-    "brand": "MSI",
-    "max_tdp": 170,
-    "cooler_mounts": [
-      "AM5"
-    ],
+    "cooler_mounts": ["AM5"],
     "pci_slots": 20,
     "id": "msi_mpg_b650_carbon_4",
-    "released_year": 2023
-  },
-  {
-    "name": "ASUS ROG STRIX Z790-E",
-    "socket": "LGA1700",
-    "chipset": "Z790",
-    "brand": "Asus",
-    "max_tdp": 150,
-    "cooler_mounts": [
-      "LGA1700"
-    ],
-    "pci_slots": 24,
-    "id": "asus_rog_strix_z790-e_5",
-    "released_year": 2023
-  },
-  {
-    "name": "ASUS ROG STRIX Z790-E",
-    "socket": "LGA1700",
-    "chipset": "Z790",
-    "brand": "Asus",
-    "max_tdp": 150,
-    "cooler_mounts": [
-      "LGA1700"
-    ],
-    "pci_slots": 24,
-    "id": "asus_rog_strix_z790-e_6",
-    "released_year": 2022
-  },
-  {
-    "name": "ASUS ROG STRIX Z790-E",
-    "socket": "LGA1700",
-    "chipset": "Z790",
-    "brand": "Asus",
-    "max_tdp": 150,
-    "cooler_mounts": [
-      "LGA1700"
-    ],
-    "pci_slots": 24,
-    "id": "asus_rog_strix_z790-e_7",
-    "released_year": 2023
-  },
-  {
-    "name": "ASUS ROG STRIX Z790-E",
-    "socket": "LGA1700",
-    "chipset": "Z790",
-    "brand": "Asus",
-    "max_tdp": 150,
-    "cooler_mounts": [
-      "LGA1700"
-    ],
-    "pci_slots": 24,
-    "id": "asus_rog_strix_z790-e_8",
-    "released_year": 2021
+    "released_year": 2020,
+    "ram_type": "DDR5"
   },
   {
     "name": "MSI MPG B650 CARBON",
     "socket": "AM5",
     "chipset": "B650",
     "brand": "MSI",
+    "logo": "/assets/images/msi.svg",
     "max_tdp": 170,
-    "cooler_mounts": [
-      "AM5"
-    ],
+    "cooler_mounts": ["AM5"],
+    "pci_slots": 20,
+    "id": "msi_mpg_b650_carbon_5",
+    "released_year": 2020,
+    "ram_type": "DDR5"
+  },
+  {
+    "name": "ASUS ROG STRIX Z790-E",
+    "socket": "LGA1700",
+    "chipset": "Z790",
+    "brand": "Asus",
+    "logo": "/assets/images/asus.svg",
+    "max_tdp": 150,
+    "cooler_mounts": ["LGA1700"],
+    "pci_slots": 24,
+    "id": "asus_rog_strix_z790_e_6",
+    "released_year": 2025,
+    "ram_type": "DDR4"
+  },
+  {
+    "name": "MSI MPG B650 CARBON",
+    "socket": "AM5",
+    "chipset": "B650",
+    "brand": "MSI",
+    "logo": "/assets/images/msi.svg",
+    "max_tdp": 170,
+    "cooler_mounts": ["AM5"],
+    "pci_slots": 20,
+    "id": "msi_mpg_b650_carbon_7",
+    "released_year": 2020,
+    "ram_type": "DDR4"
+  },
+  {
+    "name": "ASUS ROG STRIX Z790-E",
+    "socket": "LGA1700",
+    "chipset": "Z790",
+    "brand": "Asus",
+    "logo": "/assets/images/asus.svg",
+    "max_tdp": 150,
+    "cooler_mounts": ["LGA1700"],
+    "pci_slots": 24,
+    "id": "asus_rog_strix_z790_e_8",
+    "released_year": 2021,
+    "ram_type": "DDR4"
+  },
+  {
+    "name": "MSI MPG B650 CARBON",
+    "socket": "AM5",
+    "chipset": "B650",
+    "brand": "MSI",
+    "logo": "/assets/images/msi.svg",
+    "max_tdp": 170,
+    "cooler_mounts": ["AM5"],
     "pci_slots": 20,
     "id": "msi_mpg_b650_carbon_9",
-    "released_year": 2022
+    "released_year": 2025,
+    "ram_type": "DDR5"
   }
 ]

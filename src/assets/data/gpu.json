@@ -6,6 +6,7 @@
     "brand": "NVIDIA",
     "required_wattage": 450,
     "id": "nvidia_rtx_4090_0",
+    "logo": "/assets/images/nvidia.svg",
     "released_year": 2025
   },
   {
@@ -13,6 +14,7 @@
     "pci_version": "4.0",
     "length_mm": 304,
     "brand": "NVIDIA",
+    "logo": "/assets/images/nvidia.svg",
     "required_wattage": 450,
     "id": "nvidia_rtx_4090_1",
     "released_year": 2023
@@ -22,6 +24,7 @@
     "pci_version": "4.0",
     "length_mm": 287,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_2",
     "released_year": 2024
@@ -31,6 +34,7 @@
     "pci_version": "4.0",
     "length_mm": 304,
     "brand": "NVIDIA",
+    "logo": "/assets/images/nvidia.svg",
     "required_wattage": 450,
     "id": "nvidia_rtx_4090_3",
     "released_year": 2020
@@ -40,6 +44,7 @@
     "pci_version": "4.0",
     "length_mm": 287,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_4",
     "released_year": 2022
@@ -49,6 +54,7 @@
     "pci_version": "4.0",
     "length_mm": 287,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_5",
     "released_year": 2025
@@ -58,6 +64,7 @@
     "pci_version": "4.0",
     "length_mm": 287,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_6",
     "released_year": 2022
@@ -67,6 +74,7 @@
     "pci_version": "4.0",
     "length_mm": 304,
     "brand": "NVIDIA",
+    "logo": "/assets/images/nvidia.svg",
     "required_wattage": 450,
     "id": "nvidia_rtx_4090_7",
     "released_year": 2021
@@ -76,6 +84,7 @@
     "pci_version": "4.0",
     "length_mm": 287,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_8",
     "released_year": 2021
@@ -85,6 +94,7 @@
     "pci_version": "4.0",
     "length_mm": 287,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_9",
     "released_year": 2025

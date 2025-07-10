@@ -4,6 +4,7 @@
     "interface": "SATA",
     "form_factor": "2.5\"",
     "brand": "Crucial",
+    "logo": "/assets/images/crucial.svg",
     "id": "crucial_mx500_1tb_0",
     "released_year": 2020
   },
@@ -12,6 +13,7 @@
     "interface": "NVMe",
     "form_factor": "M.2",
     "brand": "Samsung",
+    "logo": "/assets/images/samsung.svg",
     "id": "samsung_980_pro_1tb_1",
     "released_year": 2022
   },
@@ -20,6 +22,7 @@
     "interface": "SATA",
     "form_factor": "2.5\"",
     "brand": "Crucial",
+    "logo": "/assets/images/crucial.svg",
     "id": "crucial_mx500_1tb_2",
     "released_year": 2021
   },
@@ -28,6 +31,7 @@
     "interface": "SATA",
     "form_factor": "2.5\"",
     "brand": "Crucial",
+    "logo": "/assets/images/crucial.svg",
     "id": "crucial_mx500_1tb_3",
     "released_year": 2021
   },
@@ -36,6 +40,7 @@
     "interface": "NVMe",
     "form_factor": "M.2",
     "brand": "Samsung",
+    "logo": "/assets/images/samsung.svg",
     "id": "samsung_980_pro_1tb_4",
     "released_year": 2023
   },
@@ -45,6 +50,7 @@
     "form_factor": "M.2",
     "brand": "Samsung",
     "id": "samsung_980_pro_1tb_5",
+    "logo": "/assets/images/crucial.svg",
     "released_year": 2022
   },
   {
@@ -52,6 +58,7 @@
     "interface": "NVMe",
     "form_factor": "M.2",
     "brand": "Samsung",
+    "logo": "/assets/images/samsung.svg",
     "id": "samsung_980_pro_1tb_6",
     "released_year": 2025
   },
@@ -60,6 +67,7 @@
     "interface": "SATA",
     "form_factor": "2.5\"",
     "brand": "Crucial",
+    "logo": "/assets/images/crucial.svg",
     "id": "crucial_mx500_1tb_7",
     "released_year": 2024
   },
@@ -68,6 +76,7 @@
     "interface": "SATA",
     "form_factor": "2.5\"",
     "brand": "Crucial",
+    "logo": "/assets/images/crucial.svg",
     "id": "crucial_mx500_1tb_8",
     "released_year": 2024
   },
@@ -76,6 +85,7 @@
     "interface": "NVMe",
     "form_factor": "M.2",
     "brand": "Samsung",
+    "logo": "/assets/images/samsung.svg",
     "id": "samsung_980_pro_1tb_9",
     "released_year": 2024
   }

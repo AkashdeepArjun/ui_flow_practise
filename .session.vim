@@ -13,22 +13,16 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +76 src/views/new_build.php
-badd +1 src/assets/css/new_build.css
-badd +122 src/assets/js/new_build.js
-badd +1 src/assets/data/motherboard.json
+badd +244 src/assets/js/new_build.js
 argglobal
 %argdel
-edit src/assets/css/new_build.css
+edit src/assets/js/new_build.js
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
-wincmd _ | wincmd |
-vsplit
-2wincmd h
-wincmd w
+1wincmd h
 wincmd w
 let &splitbelow = s:save_splitbelow
 let &splitright = s:save_splitright
@@ -44,7 +38,6 @@ tcd ~/Projects/UI_practise
 argglobal
 enew
 file ~/Projects/UI_practise/neo-tree\ filesystem\ \[1]
-balt ~/Projects/UI_practise/src/views/new_build.php
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -55,7 +48,6 @@ setlocal foldnestmax=20
 setlocal foldenable
 wincmd w
 argglobal
-balt ~/Projects/UI_practise/src/views/new_build.php
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -66,37 +58,14 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 164 - ((12 * winheight(0) + 16) / 32)
+let s:l = 244 - ((22 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 164
-normal! 017|
+keepjumps 244
+normal! 047|
 wincmd w
-argglobal
-if bufexists(fnamemodify("~/Projects/UI_practise/src/assets/js/new_build.js", ":p")) | buffer ~/Projects/UI_practise/src/assets/js/new_build.js | else | edit ~/Projects/UI_practise/src/assets/js/new_build.js | endif
-if &buftype ==# 'terminal'
-  silent file ~/Projects/UI_practise/src/assets/js/new_build.js
-endif
-balt ~/Projects/UI_practise/src/assets/data/motherboard.json
-setlocal foldmethod=manual
-setlocal foldexpr=0
-setlocal foldmarker={{{,}}}
-setlocal foldignore=#
-setlocal foldlevel=0
-setlocal foldminlines=1
-setlocal foldnestmax=20
-setlocal foldenable
-silent! normal! zE
-let &fdl = &fdl
-let s:l = 122 - ((15 * winheight(0) + 16) / 32)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 122
-normal! 0
-wincmd w
-3wincmd w
+2wincmd w
 wincmd =
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'

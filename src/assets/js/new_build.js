@@ -8,6 +8,18 @@ const psu = document.querySelector('.psu');
 const gpu = document.querySelector('.gpu');
 const casing = document.querySelector('.case');
 
+    const clear_errors=()=>{
+
+     document.querySelectorAll('.part').forEach(card=>{
+            card.classList.remove("no_okay");
+            card.classList.remove("okay");
+            card.style.transform='';
+        })   
+      
+
+
+    }
+
 
 
     console.log("script loaded");
@@ -21,17 +33,145 @@ const casing = document.querySelector('.case');
     let selected_part_type=null; 
     var cpus=null;
     var motherboards=null;
-    
-    const selected_parts ={
-        cpu:null,
-        gpu:null,
-        psu:null,
-        motherboard:null,
-        ram:null,
-        ssd:null,
-        case:null
+    const selected_parts = new Proxy({
+    cpu:null,
+    gpu:null,
+    motherboard:null,
+    ram:null,
+    ssd:null,
+    psu:null,
+    case:null,
+    },{
+        set(target,key,value){
+
+            clear_errors();
+
+            target[key]=value;
+
+            let errors = []; 
+            
+            const selected_units = Object.entries(target).filter(( [k,v] )=>v!=null);
+            
+            const selected_units_count = selected_units.length;
+
+
+            if(selected_units_count <=1){
+                
+                    return true;
+            }
+           
+            errors =check_compatibility(selected_units);
+
+            if(errors.length>0){
+                
+                    highlight_incomaptible_parts(errors);
+
+
+            }else if(selected_units_count==6 && !target.gpu && !target.cpu?.has_igpu){
+
+                ui_error("IF YOU DONT WANT TO USE GPU ATLEAST SELECT CPU THAT HAVE IN BUILT GPU");
+
+
+            }else if (selected_units_count==7 && errors.length==0){
+                
+                    enable_save_builds();
+
+            }
+
+
+            
+        
+
+            
+
+        }
+
+
+
+    })
+
+
+    const highlight_incomaptible_parts =(bugs)=>{
+        
+        bugs.forEach(json_obj => {
+            
+            // const card_ref =document.querylector('.'+json_obj.part_type);
+
+            const card_ref=document.querySelector(`.${json_obj.part_type}`);
+            card_ref.classList.add("not_okay");
+        });
+
+
 
     }
+
+
+
+
+    const check_compatibility =(selection)=>{
+        
+        const errors_temp=[];
+        for (let index = 0; index < selection.length; index++) {
+            
+            for (let next = index+1; next < selection.length; next++) {
+               
+                const [type,part] = selection[index];
+
+                const [type2,part2] = selection[next];
+
+                const issues =check_pair_compatibility(type,part,type2,part2);
+                    
+                if(issues.length>0){
+                    errors_temp.push({part_type:type2,issues})
+                }
+                
+        
+
+            }
+            
+        }
+        return errors_temp;
+    }
+
+    const check_pair_compatibility = (type_a,a,type_b,b)=>{
+      
+        const temp_issues = [];
+        const pair =[{
+            type:type_a,
+            part:a
+            },{
+                type:type_b,
+                part:b
+
+            }].sort((a,b)=>a.type.localeCompare(b.type)
+            );
+        
+        
+            const [A,B] = pair; 
+           
+            if(A.type==='cpu' && B.type==='motherboard'){
+            if(A.part.socket!==B.part.socket) temp_issues.push("CPU SOCKET MISMATCH MOTHERBOARD");
+            if(!A.part.chipsets?.includes(B.part.chipset)) temp_issues.push("CPU CHIPSET NOT SUPPORTED");
+            if(A.part.tdp>B.part.max_tdp) temp_issues.push("CPU TDP HIGHER THAN MOTHERBOARD");
+        }
+
+        if(A.type==="case" && B.type==='gpu'){
+               
+            if(B.part.length_mm > A.part.gpu_max_length_mm) temp_issues.push("GPU IS BIGGER THAN CASE");
+
+        }
+
+        if(A.type==="motherboard" && B.type==="ram"){
+
+            if(B.part.type!==A.part.ram_type) temp_issues.push("RAM SPEED WONT MATCH MOTHERBOARD SUPPORTED ");
+
+        }
+
+    
+    return temp_issues;
+    }
+
+    
 
 
 
@@ -122,7 +262,7 @@ const casing = document.querySelector('.case');
     const cpu_mb_compat = (cpu,motherboard)=>{
 
         
-        const errors=[]
+
         const socket_match = cpu.socket===motherboard.socket;
         const chipset_okay =cpu.chipsets.includes(motherboard.chipset);
         const tdp_okay =cpu.tdp<=motherboard.max_tdp;
@@ -201,26 +341,7 @@ const casing = document.querySelector('.case');
                 </div>
 `   
                 selected_parts[part_type]=part;
-                if(selected_parts.cpu && selected_parts.motherboard){
-                    console.log(selected_parts.cpu);
-                    console.log("CPU HAVE IGPU ",selected_parts.cpu.has_igpu);
-                    console.log("MOTHERBOARD SOCKET == CPU SOCKET",selected_parts.cpu.socket===selected_parts.motherboard.socket);
-                    console.log("gpu exists?",selected_parts.gpu);
-                    const gpu_opt = selected_parts.gpu!=null?true:false;
-                    const result = cpu_mb_compat(selected_parts.cpu,selected_parts.motherboard,gpu_opt);
-                   if(!result.okay){
-                        const cpu =document.querySelector('.cpu');
-                        cpu.classList.add("not_okay");
-                        console.log("dont okay");
 
-                    }else{
-                        motherboard.classList.add("okay");
-                        cpu.classList.add("okay");
-                    }
-                    console.log(result);
-                    // CPU WITH F DOES NOT HAVE GPU RIGHT BIT  /cpu_mb_compat
-
-                }
                 close_dialog_ui();
             })    
 

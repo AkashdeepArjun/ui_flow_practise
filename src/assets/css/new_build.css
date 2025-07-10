@@ -23,7 +23,7 @@ font-size: 8px;
     /* place-items: center; */
     display: flex;
     flex-direction: column;
-    
+    transform-origin: center center;    
 }
 
 .component >*:first-child{

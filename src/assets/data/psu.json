@@ -4,6 +4,7 @@
     "wattage": 850,
     "efficiency": "80+ Gold",
     "brand": "Corsair",
+    "logo": "/assets/images/corsair.svg",
     "id": "corsair_rm850x_0",
     "released_year": 2024
   },
@@ -12,6 +13,7 @@
     "wattage": 850,
     "efficiency": "80+ Gold",
     "brand": "Corsair",
+    "logo": "/assets/images/corsair.svg",
     "id": "corsair_rm850x_1",
     "released_year": 2025
   },
@@ -20,6 +22,7 @@
     "wattage": 850,
     "efficiency": "80+ Gold",
     "brand": "Corsair",
+    "logo": "/assets/images/corsair.svg",
     "id": "corsair_rm850x_2",
     "released_year": 2024
   },
@@ -28,6 +31,7 @@
     "wattage": 850,
     "efficiency": "80+ Gold",
     "brand": "Corsair",
+    "logo": "/assets/images/corsair.svg",
     "id": "corsair_rm850x_3",
     "released_year": 2022
   },
@@ -36,6 +40,7 @@
     "wattage": 750,
     "efficiency": "80+ Gold",
     "brand": "Seasonic",
+    "logo": "/assets/images/seasonic.svg",
     "id": "seasonic_focus_gx-750_4",
     "released_year": 2020
   },
@@ -44,6 +49,7 @@
     "wattage": 750,
     "efficiency": "80+ Gold",
     "brand": "Seasonic",
+    "logo": "/assets/images/seasonic.svg",
     "id": "seasonic_focus_gx-750_5",
     "released_year": 2020
   },
@@ -52,6 +58,7 @@
     "wattage": 750,
     "efficiency": "80+ Gold",
     "brand": "Seasonic",
+    "logo": "/assets/images/seasonic.svg",
     "id": "seasonic_focus_gx-750_6",
     "released_year": 2020
   },
@@ -60,6 +67,7 @@
     "wattage": 850,
     "efficiency": "80+ Gold",
     "brand": "Corsair",
+    "logo": "/assets/images/corsair.svg",
     "id": "corsair_rm850x_7",
     "released_year": 2021
   },
@@ -68,6 +76,7 @@
     "wattage": 750,
     "efficiency": "80+ Gold",
     "brand": "Seasonic",
+    "logo": "/assets/images/seasonic.svg",
     "id": "seasonic_focus_gx-750_8",
     "released_year": 2021
   },
@@ -76,6 +85,7 @@
     "wattage": 750,
     "efficiency": "80+ Gold",
     "brand": "Seasonic",
+    "logo": "/assets/images/seasonic.svg",
     "id": "seasonic_focus_gx-750_9",
     "released_year": 2023
   }

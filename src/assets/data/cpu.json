@@ -4,11 +4,9 @@
     "socket": "LGA1700",
     "has_igpu": true,
     "brand": "Intel",
+    "logo": "/assets/images/intel.svg",
     "tdp": 125,
-    "chipsets": [
-      "Z790",
-      "B760"
-    ],
+    "chipsets": ["Z790", "B760"],
     "cooler_mount": "LGA1700",
     "pci_lanes": 20,
     "id": "intel_core_i9-14900k_0",
@@ -19,11 +17,9 @@
     "socket": "LGA1700",
     "has_igpu": true,
     "brand": "Intel",
+    "logo": "/assets/images/intel.svg",
     "tdp": 125,
-    "chipsets": [
-      "Z790",
-      "B760"
-    ],
+    "chipsets": ["Z790", "B760"],
     "cooler_mount": "LGA1700",
     "pci_lanes": 20,
     "id": "intel_core_i9-14900k_1",
@@ -34,11 +30,9 @@
     "socket": "AM5",
     "has_igpu": false,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "tdp": 170,
-    "chipsets": [
-      "X670",
-      "B650"
-    ],
+    "chipsets": ["X670", "B650"],
     "cooler_mount": "AM5",
     "pci_lanes": 24,
     "id": "amd_ryzen_9_7950x_2",
@@ -49,11 +43,9 @@
     "socket": "AM5",
     "has_igpu": false,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "tdp": 170,
-    "chipsets": [
-      "X670",
-      "B650"
-    ],
+    "chipsets": ["X670", "B650"],
     "cooler_mount": "AM5",
     "pci_lanes": 24,
     "id": "amd_ryzen_9_7950x_3",
@@ -64,11 +56,9 @@
     "socket": "AM5",
     "has_igpu": false,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "tdp": 170,
-    "chipsets": [
-      "X670",
-      "B650"
-    ],
+    "chipsets": ["X670", "B650"],
     "cooler_mount": "AM5",
     "pci_lanes": 24,
     "id": "amd_ryzen_9_7950x_4",
@@ -79,11 +69,9 @@
     "socket": "AM5",
     "has_igpu": false,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "tdp": 170,
-    "chipsets": [
-      "X670",
-      "B650"
-    ],
+    "chipsets": ["X670", "B650"],
     "cooler_mount": "AM5",
     "pci_lanes": 24,
     "id": "amd_ryzen_9_7950x_5",
@@ -94,11 +82,9 @@
     "socket": "LGA1700",
     "has_igpu": true,
     "brand": "Intel",
+    "logo": "/assets/images/intel.svg",
     "tdp": 125,
-    "chipsets": [
-      "Z790",
-      "B760"
-    ],
+    "chipsets": ["Z790", "B760"],
     "cooler_mount": "LGA1700",
     "pci_lanes": 20,
     "id": "intel_core_i9-14900k_6",
@@ -109,11 +95,9 @@
     "socket": "LGA1700",
     "has_igpu": true,
     "brand": "Intel",
+    "logo": "/assets/images/intel.svg",
     "tdp": 125,
-    "chipsets": [
-      "Z790",
-      "B760"
-    ],
+    "chipsets": ["Z790", "B760"],
     "cooler_mount": "LGA1700",
     "pci_lanes": 20,
     "id": "intel_core_i9-14900k_7",
@@ -124,11 +108,9 @@
     "socket": "LGA1700",
     "has_igpu": true,
     "brand": "Intel",
+    "logo": "/assets/images/intel.svg",
     "tdp": 125,
-    "chipsets": [
-      "Z790",
-      "B760"
-    ],
+    "chipsets": ["Z790", "B760"],
     "cooler_mount": "LGA1700",
     "pci_lanes": 20,
     "id": "intel_core_i9-14900k_8",
@@ -139,11 +121,9 @@
     "socket": "AM5",
     "has_igpu": false,
     "brand": "AMD",
+    "logo": "/assets/images/amd.svg",
     "tdp": 170,
-    "chipsets": [
-      "X670",
-      "B650"
-    ],
+    "chipsets": ["X670", "B650"],
     "cooler_mount": "AM5",
     "pci_lanes": 24,
     "id": "amd_ryzen_9_7950x_9",
