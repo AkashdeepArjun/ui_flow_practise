@@ -11,12 +11,13 @@ font-size: 8px;
     --container-height:50vh;
     --container-gap:1.5rem;
     --container-padding:2rem;
+    --logs-top_offset:10%;
+    --logs-left_offset:0;
 }
 
 .component{
     /* justify-content: center; */
     transition: all 200ms ease;
-
     display: flex;
     flex-direction: column;
     transform-origin: center center; 
@@ -36,8 +37,8 @@ font-size: 8px;
     height: max-content;
     width: max-content;
     position:absolute;
-    top: 0;
-    right:4%;
+    top: calc(var(--container-height) + var(--logs-top_offset));
+    left: 0;
     padding: 0.75rem;
 
 

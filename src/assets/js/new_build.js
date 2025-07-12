@@ -8,12 +8,6 @@ const psu = document.querySelector('.psu');
 const gpu = document.querySelector('.gpu');
 const casing = document.querySelector('.case');
 const log_container =document.querySelector('.log_container');
-
-
-
-
-
-
     const clear_errors=()=>{
     document.querySelector('.log_container').innerHTML='';
      document.querySelectorAll('.part').forEach((card)=>{
@@ -84,7 +78,7 @@ const log_container =document.querySelector('.log_container');
 
             }else if (selected_units_count==7 && errors.length==0){
                 
-                    enable_save_builds();
+                    // enable_save_builds();
                     clear_errors();
 
             }
