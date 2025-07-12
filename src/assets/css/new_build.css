@@ -7,33 +7,50 @@ font-size: 8px;
     --continaer-border:0.25rem solid #008cd2ff;
     --container-cols:repeat(4,1fr);     /*4+2 extra*/ 
     --container-rows:repeat(4,1fr);
-    --container-width:80rem;
-    --container-height:70rem;
-    --container-gap:1.25rem;
+    --container-width:50vw;
+    --container-height:50vh;
+    --container-gap:1.5rem;
     --container-padding:2rem;
 }
 
 .component{
     /* justify-content: center; */
     transition: all 200ms ease;
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    /* grid-auto-rows: 1fr; */
-    /* place-content: center; */
-    /* place-items: center; */
+
     display: flex;
     flex-direction: column;
-    transform-origin: center center;    
+    transform-origin: center center; 
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    will-change: transform;
 }
+
+.log_container{
+
+    border:0.25rem solid red;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:1fr;
+    height: max-content;
+    width: max-content;
+    position:absolute;
+    top: 0;
+    right:4%;
+    padding: 0.75rem;
+
+
+
+}
+
 
 .component >*:first-child{
 
     font-size: 4rem;
     width: 6rem;
     height: 6rem;
- 
-
-}
+ }
 .component>*{
     flex-grow:0;
 }
@@ -52,6 +69,7 @@ font-size: 8px;
     align-content: center;
     justify-self: center;
     padding: var(--container-padding);
+    transition: var(--container-gap) 200ms ease;
 }
 
 .cont>div {
@@ -221,20 +239,27 @@ padding: 2rem;
     
     /* border:0.25rem solid grey; */
     font-size: 1.5rem;
-    padding: 1.5rem;
-        cursor: pointer;
+    padding: .75rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: last baseline;
+    align-items: center;
+    box-sizing: border-box;
 /*     box-sizing: content-box; */
 /* } */
+}
 
 .logo{
 
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-self: center;
     object-fit: contain;
+    margin-right: 0.5rem;
 
 
 }
@@ -249,5 +274,12 @@ padding: 2rem;
 
 
 }
+
+.part>h1{
+    
+font-size: 1em;
+    
+}
+
 
 

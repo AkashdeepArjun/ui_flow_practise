@@ -59,6 +59,10 @@ $js_ver=file_exists($js)?filemtime($js):time();
            <h1>GPU</h1> 
         </div>
         </div>
+
+        <div class="log_container hidden">
+            
+        </div>
     
         <div class="backdrop hidden" id="backdrop">
             

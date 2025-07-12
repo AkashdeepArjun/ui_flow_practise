@@ -7,21 +7,27 @@ const ram = document.querySelector('.ram');
 const psu = document.querySelector('.psu');
 const gpu = document.querySelector('.gpu');
 const casing = document.querySelector('.case');
+const log_container =document.querySelector('.log_container');
+
+
+
+
+
 
     const clear_errors=()=>{
-
-     document.querySelectorAll('.part').forEach(card=>{
-            card.classList.remove("no_okay");
+    document.querySelector('.log_container').innerHTML='';
+     document.querySelectorAll('.part').forEach((card)=>{
+            card.classList.remove("not_okay");
             card.classList.remove("okay");
             card.style.transform='';
-        })   
+            // document.querySelector('body').style.background="green";
+        })  
+
+        log_container.classList.add("hidden");
       
 
 
     }
-
-
-
     console.log("script loaded");
     const selection_title=document.querySelector('.title');
     console.log("selectoin title is ",selection_title);
@@ -61,11 +67,15 @@ const casing = document.querySelector('.case');
             }
            
             errors =check_compatibility(selected_units);
+            if(errors.length==0){
+                    clear_errors();
+            }
+
 
             if(errors.length>0){
                 
                     highlight_incomaptible_parts(errors);
-
+                    show_logs(errors);
 
             }else if(selected_units_count==6 && !target.gpu && !target.cpu?.has_igpu){
 
@@ -75,6 +85,7 @@ const casing = document.querySelector('.case');
             }else if (selected_units_count==7 && errors.length==0){
                 
                     enable_save_builds();
+                    clear_errors();
 
             }
 
@@ -105,6 +116,39 @@ const casing = document.querySelector('.case');
 
     }
 
+    const show_logs =(bugs)=>{
+    
+        
+
+    bugs.forEach( (error)=> {
+            
+
+            const issues = error.issues;
+            const parent = document.createElement("div");
+
+            issues.forEach(issue => {
+                
+                const txt = document.createElement("h1");
+                txt.innerText=issue;
+                parent.appendChild(txt);
+
+
+            });
+            
+           log_container.appendChild(parent); 
+
+
+
+
+
+    });
+
+
+            log_container.classList.remove("hidden");
+
+
+
+    }
 
 
 
@@ -259,37 +303,37 @@ const casing = document.querySelector('.case');
 
 
 
-    const cpu_mb_compat = (cpu,motherboard)=>{
-
-        
-
-        const socket_match = cpu.socket===motherboard.socket;
-        const chipset_okay =cpu.chipsets.includes(motherboard.chipset);
-        const tdp_okay =cpu.tdp<=motherboard.max_tdp;
-
-        if(!socket_match){
-            errors.push("SOCKETS DOES NOT MATCH");
-
-        }
-        if(!chipset_okay){
-            errors.push("CHIPSET NOT SUPPORTED");
-        }
-        
-        if (!tdp_okay) {
-            
-            errors.push("CPU ON  MOTHERBOARD WILL BOTTLE NECK");
-        }
-
-
-
-        return {
-            okay:errors.length===0,
-            issues:errors
-        }
-
-
-
-    }
+    // const cpu_mb_compat = (cpu,motherboard)=>{
+    //
+    //
+    //
+    //     const socket_match = cpu.socket===motherboard.socket;
+    //     const chipset_okay =cpu.chipsets.includes(motherboard.chipset);
+    //     const tdp_okay =cpu.tdp<=motherboard.max_tdp;
+    //
+    //     if(!socket_match){
+    //         errors.push("SOCKETS DOES NOT MATCH");
+    //
+    //     }
+    //     if(!chipset_okay){
+    //         errors.push("CHIPSET NOT SUPPORTED");
+    //     }
+    //
+    //     if (!tdp_okay) {
+    //
+    //         errors.push("CPU ON  MOTHERBOARD WILL BOTTLE NECK");
+    //     }
+    //
+    //
+    //
+    //     return {
+    //         okay:errors.length===0,
+    //         issues:errors
+    //     }
+    //
+    //
+    //
+    // }
 
     const load_parts = async(part_type,title,choice_source)=>{
 
@@ -334,11 +378,11 @@ const casing = document.querySelector('.case');
             cpu.classList.remove("okay","not_okay");
             motherboard.classList.remove("not_okay","okay");
                 choice_source.innerHTML=`
-                <div class ="selected_part">   
+                 
                     <img src =${part.logo} class="logo">
                     <h1 class="modal">${part.name}</h1>
 
-                </div>
+               
 `   
                 selected_parts[part_type]=part;
 
