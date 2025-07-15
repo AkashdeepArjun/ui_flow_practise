@@ -51,7 +51,8 @@ const log_container =document.querySelector('.log_container');
             let errors = []; 
             
             const selected_units = Object.entries(target).filter(( [k,v] )=>v!=null);
-            
+                // [ cpu,gpu,ram,psu]
+             
             const selected_units_count = selected_units.length;
 
 
@@ -59,6 +60,7 @@ const log_container =document.querySelector('.log_container');
                 
                     return true;
             }
+        
            
             errors =check_compatibility(selected_units);
             if(errors.length==0){
@@ -82,12 +84,6 @@ const log_container =document.querySelector('.log_container');
                     clear_errors();
 
             }
-
-
-            
-        
-
-            
 
         }
 
@@ -149,6 +145,23 @@ const log_container =document.querySelector('.log_container');
     const check_compatibility =(selection)=>{
         
         const errors_temp=[];
+        const selection_object=Object.fromEntries(selection);
+
+     if(selection_object.cpu && selection_object.psu && selection_object.gpu){
+
+                const min_consumption = estimate_power_consumption(selection_object.gpu,selection_object.cpu);
+                if(selection_object.psu.wattage < min_consumption){
+
+                    errors_temp.push({part_type:"psu",issues:["PSU NOT SUPPORTED"]}) 
+                }
+
+                console.log("PSU WATTAGE =>", selection_object.psu.wattage);
+                console.log("CONSUMPTION =>",min_consumption);
+
+
+            }
+
+
         for (let index = 0; index < selection.length; index++) {
             
             for (let next = index+1; next < selection.length; next++) {
@@ -204,6 +217,43 @@ const log_container =document.querySelector('.log_container');
             if(B.part.type!==A.part.ram_type) temp_issues.push("RAM SPEED WONT MATCH MOTHERBOARD SUPPORTED ");
 
         }
+
+        if(A.type==="motherboard" && B.type==="ssd"){
+        
+        if(!A.part.m2_slots?.includes(B.part.form_factor)) temp_issues.push("MOTHERBOARD DOES NOT SUPPORT SELECTED SSD FORM FACTOR");
+
+        if(!A.part.supported_interfaces?.includes(B.part.interface)) temp_issues.push("SSD INTERFACE (NVME/sata ) NOT SUPPORTED");
+
+        
+
+        }
+
+        if(A.type==="case" && B.type==="motherboard"){
+
+
+        if(!A.part.form_factors?.includes(B.part.form_factor)) temp_issues.push("MOTHERBOARD WONT FIT IN CASE");
+
+
+        }
+
+        if(A.type==="gpu" && B.type==="psu"){
+
+            
+        if(!B.part.connectors?.includes(A.part.required_connector)) temp_issues.push("POWER SUPPLU DOES NOT HAVE CONNECTOR REQUIRED FOR GPU");
+            
+
+
+
+        }
+
+        if(A.type==="gpu" && B.type==="motherboard"){
+
+        if(B.part.pci_version < A.part.pci_version) temp_issues.push("GPU PCI IS NOT SUPPORTED IN MOTHERBOARD PCI SLOT")
+
+
+        }         
+
+
 
     
     return temp_issues;
@@ -389,13 +439,12 @@ const log_container =document.querySelector('.log_container');
 
 
     }
+    function estimate_power_consumption(...parts){
 
+       return parts.reduce((previous, current) => {
+       return previous+(current?.tdp || 0) 
+       }, 50)
 
-
-
-  
-
-
-
+    }
 
 })

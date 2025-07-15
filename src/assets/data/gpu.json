@@ -1,13 +1,15 @@
 [
   {
     "name": "NVIDIA RTX 4090",
-    "pci_version": "4.0",
+    "pci_version": "5.0",
     "length_mm": 304,
     "brand": "NVIDIA",
     "required_wattage": 450,
     "id": "nvidia_rtx_4090_0",
     "logo": "/assets/images/nvidia.svg",
-    "released_year": 2025
+    "released_year": 2025,
+    "required_connector": "8-pin",
+    "tdp": 450
   },
   {
     "name": "NVIDIA RTX 4090",
@@ -17,7 +19,9 @@
     "logo": "/assets/images/nvidia.svg",
     "required_wattage": 450,
     "id": "nvidia_rtx_4090_1",
-    "released_year": 2023
+    "released_year": 2023,
+    "required_connector": "8-pin",
+    "tdp": 450
   },
   {
     "name": "AMD Radeon RX 7900 XTX",
@@ -27,7 +31,9 @@
     "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_2",
-    "released_year": 2024
+    "released_year": 2024,
+    "required_connector": "8-pin",
+    "tdp": 355
   },
   {
     "name": "NVIDIA RTX 4090",
@@ -37,7 +43,9 @@
     "logo": "/assets/images/nvidia.svg",
     "required_wattage": 450,
     "id": "nvidia_rtx_4090_3",
-    "released_year": 2020
+    "released_year": 2020,
+    "required_connector": "8-pin",
+    "tdp": 450
   },
   {
     "name": "AMD Radeon RX 7900 XTX",
@@ -47,7 +55,9 @@
     "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_4",
-    "released_year": 2022
+    "released_year": 2022,
+    "required_connector": "8-pin",
+    "tdp": 355
   },
   {
     "name": "AMD Radeon RX 7900 XTX",
@@ -57,7 +67,9 @@
     "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_5",
-    "released_year": 2025
+    "released_year": 2025,
+    "required_connector": "8-pin",
+    "tdp": 355
   },
   {
     "name": "AMD Radeon RX 7900 XTX",
@@ -67,17 +79,21 @@
     "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_6",
-    "released_year": 2022
+    "released_year": 2022,
+    "required_connector": "8-pin",
+    "tdp": 355
   },
   {
     "name": "NVIDIA RTX 4090",
     "pci_version": "4.0",
-    "length_mm": 304,
+    "length_mm": 404,
     "brand": "NVIDIA",
     "logo": "/assets/images/nvidia.svg",
     "required_wattage": 450,
     "id": "nvidia_rtx_4090_7",
-    "released_year": 2021
+    "released_year": 2021,
+    "required_connector": "8-pin",
+    "tdp": 450
   },
   {
     "name": "AMD Radeon RX 7900 XTX",
@@ -87,7 +103,9 @@
     "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_8",
-    "released_year": 2021
+    "released_year": 2021,
+    "required_connector": "8-pin",
+    "tdp": 355
   },
   {
     "name": "AMD Radeon RX 7900 XTX",
@@ -97,6 +115,8 @@
     "logo": "/assets/images/amd.svg",
     "required_wattage": 355,
     "id": "amd_radeon_rx_7900_xtx_9",
-    "released_year": 2025
+    "released_year": 2025,
+    "required_connector": "8-pin",
+    "tdp": 355
   }
 ]
