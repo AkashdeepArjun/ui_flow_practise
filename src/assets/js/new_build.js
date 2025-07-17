@@ -73,12 +73,12 @@ const log_container =document.querySelector('.log_container');
                     highlight_incomaptible_parts(errors);
                     show_logs(errors);
 
-            }else if(selected_units_count==6 && !target.gpu && !target.cpu?.has_igpu){
+            }else if(selected_units_count==7 && !target.gpu && !target.cpu?.has_igpu){
 
-                ui_error("IF YOU DONT WANT TO USE GPU ATLEAST SELECT CPU THAT HAVE IN BUILT GPU");
+                // ("IF YOU DONT WANT TO USE GPU ATLEAST SELECT CPU THAT HAVE IN BUILT GPU");
 
 
-            }else if (selected_units_count==7 && errors.length==0){
+            }else if (selected_units_count==8 && errors.length==0){
                 
                     // enable_save_builds();
                     clear_errors();
@@ -98,7 +98,7 @@ const log_container =document.querySelector('.log_container');
             
             // const card_ref =document.querylector('.'+json_obj.part_type);
 
-            const card_ref=document.querySelector(`.${json_obj.part_type}`);
+            const card_ref=document.querySelector(`.${json_obj.part_type.toLowerCase()}`);
             card_ref.classList.add("not_okay");
         });
 
@@ -147,15 +147,15 @@ const log_container =document.querySelector('.log_container');
         const errors_temp=[];
         const selection_object=Object.fromEntries(selection);
 
-     if(selection_object.cpu && selection_object.psu && selection_object.gpu){
-
-                const min_consumption = estimate_power_consumption(selection_object.gpu,selection_object.cpu);
-                if(selection_object.psu.wattage < min_consumption){
+     if(selection_object.CPU && selection_object.PSU && selection_object.GPU){
+                console.log("psu cpu and gpu",selection_object.CPU,selection_object.PSU,selection_object.GPU);
+                const min_consumption = estimate_power_consumption(selection_object.GPU,selection_object.CPU);
+                if(selection_object.PSU.wattage < min_consumption){
 
                     errors_temp.push({part_type:"psu",issues:["PSU NOT SUPPORTED"]}) 
                 }
 
-                console.log("PSU WATTAGE =>", selection_object.psu.wattage);
+                console.log("PSU WATTAGE =>", selection_object.PSU.wattage);
                 console.log("CONSUMPTION =>",min_consumption);
 
 
@@ -199,66 +199,83 @@ const log_container =document.querySelector('.log_container');
         
         
             const [A,B] = pair; 
-           
-            if(A.type==='cpu' && B.type==='motherboard'){
-            if(A.part.socket!==B.part.socket) temp_issues.push("CPU SOCKET MISMATCH MOTHERBOARD");
-            if(!A.part.chipsets?.includes(B.part.chipset)) temp_issues.push("CPU CHIPSET NOT SUPPORTED");
-            if(A.part.tdp>B.part.max_tdp) temp_issues.push("CPU TDP HIGHER THAN MOTHERBOARD");
-        }
+       
+    if(A.type.toLowerCase()==="cpu"  && B.type.toLowerCase()=== 'motherboard'){
+    if(A.part.socket!==B.part.socket) temp_issues.push("CPU SOCKET MISMATCH MOTHERBOARD");
+    if(!A.part.chipsets?.includes(B.part.chipset)) temp_issues.push("CPU CHIPSET NOT SUPPORTED");
+    if(A.part.tdp>B.part.max_tdp) temp_issues.push("CPU TDP HIGHER THAN MOTHERBOARD");
+}
 
-        if(A.type==="case" && B.type==='gpu'){
-               
-            if(B.part.length_mm > A.part.gpu_max_length_mm) temp_issues.push("GPU IS BIGGER THAN CASE");
+if(A.type.toLowerCase()==="case" && B.type.toLowerCase()==='gpu'){
+       
+    if(B.part.length_mm > A.part.gpu_max_length_mm) temp_issues.push("GPU IS BIGGER THAN CASE");
 
-        }
+}
 
-        if(A.type==="motherboard" && B.type==="ram"){
+if(A.type.toLowerCase()==="motherboard" && B.type.toLowerCase()==="ram"){
 
-            if(B.part.type!==A.part.ram_type) temp_issues.push("RAM SPEED WONT MATCH MOTHERBOARD SUPPORTED ");
+    if(B.part.type!==A.part.ram_type) temp_issues.push("RAM SPEED WONT MATCH MOTHERBOARD SUPPORTED ");
 
-        }
+}
 
-        if(A.type==="motherboard" && B.type==="ssd"){
-        
-        if(!A.part.m2_slots?.includes(B.part.form_factor)) temp_issues.push("MOTHERBOARD DOES NOT SUPPORT SELECTED SSD FORM FACTOR");
+    if(A.type.toLowerCase()==="motherboard" && B.type.toLowerCase()==="ssd"){
+    
+    if(!A.part.m2_slots?.includes(B.part.form_factor)) temp_issues.push("MOTHERBOARD DOES NOT SUPPORT SELECTED SSD FORM FACTOR");
 
-        if(!A.part.supported_interfaces?.includes(B.part.interface)) temp_issues.push("SSD INTERFACE (NVME/sata ) NOT SUPPORTED");
-
-        
-
-        }
-
-        if(A.type==="case" && B.type==="motherboard"){
-
-
-        if(!A.part.form_factors?.includes(B.part.form_factor)) temp_issues.push("MOTHERBOARD WONT FIT IN CASE");
-
-
-        }
-
-        if(A.type==="gpu" && B.type==="psu"){
-
-            
-        if(!B.part.connectors?.includes(A.part.required_connector)) temp_issues.push("POWER SUPPLU DOES NOT HAVE CONNECTOR REQUIRED FOR GPU");
-            
-
-
-
-        }
-
-        if(A.type==="gpu" && B.type==="motherboard"){
-
-        if(B.part.pci_version < A.part.pci_version) temp_issues.push("GPU PCI IS NOT SUPPORTED IN MOTHERBOARD PCI SLOT")
-
-
-        }         
-
-
+    if(!A.part.supported_interfaces?.includes(B.part.interface)) temp_issues.push("SSD INTERFACE (NVME/sata ) NOT SUPPORTED");
 
     
-    return temp_issues;
+
     }
 
+    if(A.type.toLowerCase()==="case" && B.type.toLowerCase()==="motherboard"){
+
+
+    if(!A.part.form_factors?.includes(B.part.form_factor)) temp_issues.push("MOTHERBOARD WONT FIT IN CASE");
+
+
+    }
+
+    if(A.type.toLowerCase()==="gpu" && B.type.toLowerCase()==="psu"){
+
+        
+    if(!B.part.connectors?.includes(A.part.required_connector)) temp_issues.push("POWER SUPPLU DOES NOT HAVE CONNECTOR REQUIRED FOR GPU");
+        
+
+
+
+    }
+
+    if(A.type.toLowerCase()==="gpu" && B.type.toLowerCase()==="motherboard"){
+
+    if(B.part.pci_version < A.part.pci_version) temp_issues.push("GPU PCI IS NOT SUPPORTED IN MOTHERBOARD PCI SLOT")
+
+
+    }
+
+    if(A.type.toLowerCase()==="coolant" && B.type.toLowerCase()==="cpu"){
+
+
+       if(!A.part.supported_sockets?.includes(B.part.socket)) temp_issues.push("COOLANT IS NOT SUPPORTED FOR GIVEN CPU");
+        if(B.part.tdp > A.part.cooling_capacity_tdp) temp_issues.push("COOLANT CANT COOL DOWN THAT CPU");
+
+
+
+    }
+
+
+    if(A.type.toLowerCase()==="case" && B.type.toLowerCase()==="coolant"){
+        
+            if(B.part.type==="air" && B.part.height_mm > A.part.cooler_max_height_mm) temp_issues.push(" AIR COOLANT WONT FIT IN CASE");
+            if(B.part.type==="liquid"  && B.part.height_mm > A.part.radiator_mount_size_mm) temp_issues.push("LIQUID COOLER WONT FIT INSIDE CASE");   
+            
+
+
+            
+    }
+
+    return temp_issues;
+    }
     
 
 
@@ -291,42 +308,7 @@ const log_container =document.querySelector('.log_container');
 
     })
 
-    // const handle_keypress = (e)=>{
-    //
-    //     // e.preventDefault();
-    // if(e.altKey && e.shiftKey){
-    //     let type="motherboard";
-    //     switch (e.key.toLowerCase()) {
-    //         case "m": type="motherboard"; break;
-    //         case "p":type="cpu";break;
-    //
-    //         default:
-    //             break;
-    //     }
-    //     console.log("ALT +SHIFT ",e.key," PRESSED");
-    //     show_dialog(type);
-    //
-    // }
-    //
-    //
-    //     console.log("KEY PRESSED ",e.key.toLowerCase());
-    //
-    //
-    // }
-
-
-    
-    // document.addEventListener("keydown",handle_keypress);
-
-
-
-
-
-
-
-
-
-    document.querySelectorAll(".part").forEach(card=>{
+      document.querySelectorAll(".part").forEach(card=>{
 
         card.addEventListener("click",()=>{
 
@@ -383,8 +365,8 @@ const log_container =document.querySelector('.log_container');
 
 
         try {
-   
-            const response = await fetch(`/assets/data/${part_type}.json?ts=${Date.now()}`);
+            const fname=part_type.toLowerCase(); 
+            const response = await fetch(`/assets/data/${fname}.json?ts=${Date.now()}`);
         
             const products = await response.json();
 

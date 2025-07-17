@@ -20,19 +20,30 @@ $js_ver=file_exists($js)?filemtime($js):time();
 
     <div class="cont">
 
-        <div class="case part" data-part-type="case">
+        <div class="case part" data-part-type="CASE">
 
             <h1>CASE</h1>
             
+            </div>
+        <!---->
+        <div class="coolant part" data-part-type="COOLANT">
+
+
+            <h1>COOLANT</h1>
+
         </div>
 
-        <div class="ssd part" data-part-type="ssd">
+
+
+
+
+        <div class="ssd part" data-part-type="SSD">
         
             <h1>SSD</h1>
 
         </div>
 
-        <div class="ram part" data-part-type="ram">
+        <div class="ram part" data-part-type="RAM">
             <h1>RAM</h1>
 
 
@@ -40,22 +51,22 @@ $js_ver=file_exists($js)?filemtime($js):time();
        
        
        
-        <div class="motherboard part" data-part-type="motherboard">
+        <div class="motherboard part" data-part-type="MOTHERBOARD">
 
             <h1>MOTHERBOARD</h1>
 
         </div>
 
-        <div class="psu part" data-part-type="psu">
+        <div class="psu part" data-part-type="PSU">
            <h1>POWER SUPPLY</h1> 
         </div>
 
-        <div class="cpu part" data-part-type="cpu">
+        <div class="cpu part" data-part-type="CPU">
            <h1>CPU</h1> 
         </div>
 
 
-        <div class="gpu part" data-part-type="gpu"> 
+        <div class="gpu part" data-part-type="GPU"> 
            <h1>GPU</h1> 
         </div>
         </div>
