@@ -1,0 +1,46 @@
+{
+  "name": {
+    "label": "CPU",
+    "type": "text"
+  },
+  "tdp": {
+    "label": "TDP",
+    "type": "number"
+  },
+  "pci_lanes": {
+    "label": "PCI LANES",
+    "type": "number"
+  },
+  "chipsets": {
+    "label": "CHIPSETS",
+    "type": "select",
+    "options": ["Z790", "B760"]
+  },
+  "brand": {
+    "label": "BRAND",
+    "type": "text"
+  },
+  "id": {
+    "label": "ID",
+    "type": "text"
+  },
+  "has_igpu": {
+    "label": "HAS INBUILT GPU",
+    "type": "select",
+    "options": [true, false]
+  },
+  "socket": {
+    "label": "SOCKET",
+    "type": "select",
+    "options": ["LGA1700"]
+  },
+  "released_year": {
+    "label": "RELEASE YEAR",
+    "type": "date"
+  },
+  "cooler_mount": {
+    "label": "COOLER MOUNT",
+    "type": "select",
+    "options": ["LGA1700"]
+  }
+}

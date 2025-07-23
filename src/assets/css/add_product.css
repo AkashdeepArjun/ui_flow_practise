@@ -1,0 +1,115 @@
+*{
+margin: 0;
+padding: 0;
+
+
+}
+html{
+    font-size: 8px;
+}
+:root{
+
+--header-height:25vh;
+--header-width:100vw;
+
+}
+
+
+body{
+/* position: relative; */
+}
+
+header{
+background-color:#870ad2ff ;
+width: 100vw;
+height: 25vh;
+display: flex;
+justify-content: center;
+align-content: center;
+align-tracks: center;
+align-items: center;
+z-index: 1;
+
+}
+
+label{
+font-size: 2rem;
+font-style: bold;
+margin-right: 1rem;
+
+}
+
+
+select{
+
+padding: 1rem;
+flex-grow: 0;
+height: max-content;
+
+
+
+}
+
+.form_container{
+   top: calc(var(--header-height)+1rem);
+   background-color: greenyellow; 
+    width: 100%;
+    height: 100%;
+   display: grid;
+
+
+
+
+
+}
+.part_form{ 
+   width: max-content;
+   height: max-content;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-auto-rows: 1fr;
+   grid-gap: 0.5rem;
+   padding: 1rem;
+   justify-self: center;
+   position: relative;
+   z-index: 1;
+
+}
+
+.save_button{
+   position:absolute; 
+   width: 16rem;
+   height: 8rem;
+   top:0;
+   left: 0;
+   background-color:#19fa73 ;
+   opacity: 1;
+   padding: 2rem;
+   font-style: bold;
+   font-size: 4rem;
+   border-radius: 0.5rem;
+   text-justify: center;
+   text-align: center;
+   opacity: 0.5;
+   z-index: 2;
+
+}
+
+.enable_save_button{
+
+opacity: 1;
+
+}
+
+
+.part_form >*:nth-child(2n+1){
+
+   /* border: 0.25rem solid brown; */
+   display: grid;
+   align-items: last baseline;
+   justify-items: end;
+
+}
+
+
+

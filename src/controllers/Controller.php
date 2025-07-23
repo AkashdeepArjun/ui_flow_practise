@@ -9,6 +9,14 @@ function getNewBuildPage(){
 
 }
 
+function getAddProductPage(){
+
+
+    require_once PROJECT_ROOT.'/views/add_product.php';
+
+
+
+}
 
 
 function getHome(){

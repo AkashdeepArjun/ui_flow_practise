@@ -5,9 +5,9 @@ require  PROJECT_ROOT .'/controllers/Controller.php';
 
 switch($path){
 
-    case 'new_build':
-        getNewBuildPage();
-        break;
+    /* case 'new_build': */
+    /*     getNewBuildPage(); */
+    /*     break; */
 
     case 'home':
         getHome();
