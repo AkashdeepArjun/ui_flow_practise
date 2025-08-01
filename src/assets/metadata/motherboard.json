@@ -1,0 +1,70 @@
+{
+  "name": {
+    "label": "MODEL",
+    "type": "text"
+  },
+  "brand": {
+    "label": "BRAND",
+    "type": "text"
+  },
+  "max_tdp": {
+    "label": "MAX TDP",
+    "type": "number"
+  },
+  "pci_slots": {
+    "label": "PCI SLOTS",
+    "type": "number"
+  },
+  "id": {
+    "label": "ID",
+    "type": "text"
+  },
+  "socket": {
+    "label": "SOCKET",
+    "type": "select",
+    "options": ["LGA1700", "AM4"]
+  },
+  "pci_version": {
+    "label": "PCI VERSION",
+    "type": "select",
+    "options": ["4.0", "5.0"]
+  },
+  "released_year": {
+    "label": "RELEASED",
+    "type": "date"
+  },
+  "chipset": {
+    "label": "CHIPSET",
+    "type": "select",
+    "options": ["LGA1700", "AM4"]
+  },
+  "ram_type": {
+    "label": "RAM TYPE",
+    "options": ["DDR3", "DDR4", "DDR5"],
+    "type": "select"
+  },
+  "supported_interfaces": {
+    "label": "SUPPORTED INTERFACES",
+    "options": ["NVME", "SATA"],
+    "type": "checkbox"
+  },
+  "form_factor": {
+    "label": "FORM FACTOR",
+    "options": ["ATX", "ITX", "mATX"],
+    "type": "select"
+  },
+  "m2_slots": {
+    "label": "M2 SLOTS",
+    "type": "checkbox",
+    "options": ["M.2.2280", "M.2BLABLA"]
+  },
+  "cooler_mounts": {
+    "label": "COOLER MOUNTS",
+    "type": "select",
+    "options": ["LGA1700", "AM4"]
+  },
+  "price": {
+    "label": "PRICE",
+    "type": "number"
+  }
+}

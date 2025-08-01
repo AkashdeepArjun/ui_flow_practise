@@ -1,0 +1,31 @@
+{
+  "name": {
+    "label": "SSD ",
+    "type": "text"
+  },
+  "interface": {
+    "label": "INTERFACE ",
+    "type": "select",
+    "options": ["SATA", "M.2", "NVME"]
+  },
+  "form_factor": {
+    "label": "FORM FACTOR",
+    "type": "text"
+  },
+  "brand": {
+    "type": "text",
+    "label": "BRAND"
+  },
+  "id": {
+    "label": "ID",
+    "type": "text"
+  },
+  "released_year": {
+    "label": "RELEASE YEAR",
+    "type": "date"
+  },
+  "price": {
+    "label": "PRICE",
+    "type": "number"
+  }
+}

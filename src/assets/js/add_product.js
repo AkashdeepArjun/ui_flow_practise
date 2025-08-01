@@ -98,7 +98,8 @@ save_button.disabled=true;
     
     const label = document.createElement("label");
     label.htmlFor=key;
-  
+    
+    var wrapper =null;
     label.innerText=field.label;
       let input ;
     if(field.type=="select"){
@@ -110,7 +111,30 @@ save_button.disabled=true;
       opt.textContent=option;
       input.appendChild(opt);
       });
-    }else{
+    }else if(field.type=="checkbox"){
+        wrapper = document.createElement("div");
+        wrapper.classList.add("checkbox_wrapper");
+        field.options.forEach(option => {
+
+          const checkbox_wrapper = document.createElement("label");
+          checkbox_wrapper.classList.add("checkbox");
+          const ip = document.createElement("input");
+          ip.type="checkbox";
+          ip.name=key+"[]";
+          ip.value=option;
+          checkbox_wrapper.appendChild(ip);
+          checkbox_wrapper.append(" "+option);
+          wrapper.appendChild(checkbox_wrapper);
+           
+
+
+
+        });
+    
+
+
+
+      }else{
       input =document.createElement("input");
       input.name=key;
       input.required=true;
@@ -119,8 +143,14 @@ save_button.disabled=true;
    }
 
          part_form.appendChild(label);
-         part_form.appendChild(input);
-  
+        if(wrapper){
+
+        part_form.appendChild(wrapper);
+      }else{
+
+        part_form.appendChild(input);
+        
+      }
     })
 
 
@@ -138,7 +168,23 @@ const save_part = async (e)=>{
 
   form_data.forEach((v,k)=>{
 
-    data[k] = v.trim();
+    const clean_key = k.replace(/\[\]$/,'');
+      if(data.hasOwnProperty(clean_key)){
+
+        if(!Array.isArray(data[clean_key])){
+          data[clean_key]=[data[clean_key]];
+        }
+        data[clean_key].push(v);
+  }else{
+      
+        
+        data[clean_key]=v;
+
+
+
+      }
+
+
 
     })
 

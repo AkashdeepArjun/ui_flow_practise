@@ -42,5 +42,9 @@
     "label": "COOLER MOUNT",
     "type": "select",
     "options": ["LGA1700"]
+  },
+  "price": {
+    "label": "PRICE",
+    "type": "number"
   }
 }

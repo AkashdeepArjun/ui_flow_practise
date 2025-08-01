@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded",()=>{
 
+
+
 const cpu =document.querySelector(".cpu");
 const motherboard = document.querySelector(".motherboard");
 const ssd = document.querySelector('.ssd');
@@ -367,7 +369,8 @@ if(A.type.toLowerCase()==="motherboard" && B.type.toLowerCase()==="ram"){
         try {
             const fname=part_type.toLowerCase(); 
             const response = await fetch(`/assets/data/${fname}.json?ts=${Date.now()}`);
-        
+             
+
             const products = await response.json();
 
             console.log('products in json format is ',products);

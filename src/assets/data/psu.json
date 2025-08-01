@@ -1,132 +1,54 @@
 [
-  {
-    "name": "Corsair RM850x",
-    "wattage": 300,
-    "efficiency": "80+ Gold",
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_rm850x_0",
-    "released_year": 2024,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Corsair RM850x",
-    "wattage": 850,
-    "efficiency": "80+ Gold",
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_rm850x_1",
-    "released_year": 2025,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Corsair RM850x",
-    "wattage": 850,
-    "efficiency": "80+ Gold",
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_rm850x_2",
-    "released_year": 2024,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Corsair RM850x",
-    "wattage": 850,
-    "efficiency": "80+ Gold",
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_rm850x_3",
-    "released_year": 2022,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Seasonic Focus GX-750",
-    "wattage": 750,
-    "efficiency": "80+ Gold",
-    "brand": "Seasonic",
-    "logo": "/assets/images/seasonic.svg",
-    "id": "seasonic_focus_gx-750_4",
-    "released_year": 2020,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Seasonic Focus GX-750",
-    "wattage": 750,
-    "efficiency": "80+ Gold",
-    "brand": "Seasonic",
-    "logo": "/assets/images/seasonic.svg",
-    "id": "seasonic_focus_gx-750_5",
-    "released_year": 2020,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Seasonic Focus GX-750",
-    "wattage": 750,
-    "efficiency": "80+ Gold",
-    "brand": "Seasonic",
-    "logo": "/assets/images/seasonic.svg",
-    "id": "seasonic_focus_gx-750_6",
-    "released_year": 2020,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Corsair RM850x",
-    "wattage": 850,
-    "efficiency": "80+ Gold",
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_rm850x_7",
-    "released_year": 2021,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Seasonic Focus GX-750",
-    "wattage": 750,
-    "efficiency": "80+ Gold",
-    "brand": "Seasonic",
-    "logo": "/assets/images/seasonic.svg",
-    "id": "seasonic_focus_gx-750_8",
-    "released_year": 2021,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  },
-  {
-    "name": "Seasonic Focus GX-750",
-    "wattage": 750,
-    "efficiency": "80+ Gold",
-    "brand": "Seasonic",
-    "logo": "/assets/images/seasonic.svg",
-    "id": "seasonic_focus_gx-750_9",
-    "released_year": 2023,
-    "connectors": [
-      "8-pin",
-      "24-pin"
-    ]
-  }
+    {
+        "name": "Corsair RM850x",
+        "wattage": 850,
+        "efficiency": "80+ Gold",
+        "brand": "Corsair",
+        "logo": "\/assets\/images\/corsair.svg",
+        "id": "corsair_rm850x_1",
+        "released_year": 2025,
+        "connectors": [
+            "8-pin",
+            "24-pin"
+        ]
+    },
+    {
+        "name": "Seasonic Focus GX-750",
+        "wattage": 750,
+        "efficiency": "80+ Gold",
+        "brand": "Seasonic",
+        "logo": "\/assets\/images\/seasonic.svg",
+        "id": "seasonic_focus_gx-750_4",
+        "released_year": 2020,
+        "connectors": [
+            "8-pin",
+            "24-pin"
+        ]
+    },
+    {
+        "name": "Seasonic Focus GX-750",
+        "wattage": 750,
+        "efficiency": "80+ Gold",
+        "brand": "Seasonic",
+        "logo": "\/assets\/images\/seasonic.svg",
+        "id": "seasonic_focus_gx-750_6",
+        "released_year": 2020,
+        "connectors": [
+            "8-pin",
+            "24-pin"
+        ]
+    },
+    {
+        "name": "Corsair RM850x",
+        "wattage": 850,
+        "efficiency": "80+ Gold",
+        "brand": "Corsair",
+        "logo": "\/assets\/images\/corsair.svg",
+        "id": "corsair_rm850x_7",
+        "released_year": 2021,
+        "connectors": [
+            "8-pin",
+            "24-pin"
+        ]
+    }
 ]

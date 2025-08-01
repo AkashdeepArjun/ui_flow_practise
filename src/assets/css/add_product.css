@@ -14,9 +14,40 @@ html{
 
 }
 
+.checkbox{
+   display:flex;
+   /* background-color: green; */
+   padding: 0.25rem;
+
+
+}
+
+.checkbox_wrapper{
+ display: flex;
+align-items: last baseline;
+
+
+}
+
+
+
+.checkbox>input{
+
+   display: inline;
+
+}
+
+
+.checkbox>*:first-child{
+   margin-right: 0.125rem;
+}
+
+
+
 
 body{
 /* position: relative; */
+   background-color: pink;
 }
 
 header{

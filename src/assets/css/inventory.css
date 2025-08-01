@@ -1,0 +1,92 @@
+html{
+   font-size: 8px;
+}
+
+:root{
+   --container-width:100vw;
+   --container-height:80vh;
+   --container-background:#646e7d;
+   --container-padding:1rem;
+   --container-grid-gap:2rem;
+
+
+}
+
+
+.cont{
+
+   width: var(--container-width);
+   height: var(--container-height);
+   padding:var(--container-padding) ;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(2,1fr);
+   grid-gap: var(--container-grid-gap);
+}
+
+.item{
+      
+   display:grid;
+   grid-template-columns: subgrid;
+   grid-template-rows: repeat(2,1fr);
+   grid-row-gap: 1rem;
+   box-shadow: 0 2px 5px black;  
+   background: white;
+   place-items: center;
+   
+
+}
+
+.cont>div{
+   cursor:pointer;
+}
+
+
+div>h1:nth-child(1){
+   font-size: 4rem;
+}
+
+div>h1:nth-child(2){
+   font-size: 5rem;
+}
+
+
+
+.item_skeleton {
+   
+   background:linear-gradient(90deg,red,pink,green);
+   background-size:200% 100%;
+   border-radius: 0.5rem;
+   animation: loading 1.5s infinite linear;
+
+}
+
+
+.skeleton_text{
+
+   width: max-content;
+   height: max-content;
+   padding:1rem;
+
+
+
+}
+
+
+@keyframes loading{
+
+0%{
+   background-position: 200% 0;
+}
+100%{
+   background-position: -200% 0;
+}
+
+
+
+
+}
+
+
+
+

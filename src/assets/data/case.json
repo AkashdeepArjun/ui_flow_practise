@@ -1,122 +1,122 @@
 [
-  {
-    "name": "Fractal Design Meshify C",
-    "gpu_max_length_mm": 315,
-    "cooler_max_height_mm": 170,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "Fractal",
-    "logo": "/assets/images/fractal.svg",
-    "id": "fractal_design_meshify_c_0",
-    "released_year": 2025,
-    "cooler_max_height_mm": 120,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "NZXT H510",
-    "gpu_max_length_mm": 381,
-    "cooler_max_height_mm": 165,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "NZXT",
-    "logo": "/assets/images/nzxt.svg",
-    "id": "nzxt_h510_1",
-    "released_year": 2025,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "Fractal Design Meshify C",
-    "gpu_max_length_mm": 315,
-    "cooler_max_height_mm": 170,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "Fractal",
-    "logo": "/assets/images/fractal.svg",
-    "id": "fractal_design_meshify_c_2",
-    "released_year": 202,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "Fractal Design Meshify C",
-    "gpu_max_length_mm": 315,
-    "cooler_max_height_mm": 170,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "Fractal",
-    "logo": "/assets/images/fractal.svg",
-    "id": "fractal_design_meshify_c_3",
-    "released_year": 2023,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "Fractal Design Meshify C",
-    "gpu_max_length_mm": 315,
-    "cooler_max_height_mm": 170,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "Fractal",
-    "logo": "/assets/images/fractal.svg",
-    "id": "fractal_design_meshify_c_4",
-    "released_year": 2024,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "NZXT H510",
-    "gpu_max_length_mm": 381,
-    "cooler_max_height_mm": 165,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "NZXT",
-    "logo": "/assets/images/nzxt.svg",
-    "id": "nzxt_h510_5",
-    "released_year": 2024,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "NZXT H510",
-    "gpu_max_length_mm": 381,
-    "cooler_max_height_mm": 165,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "NZXT",
-    "logo": "/assets/images/nzxt.svg",
-    "id": "nzxt_h510_6",
-    "released_year": 2025,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "Fractal Design Meshify C",
-    "gpu_max_length_mm": 315,
-    "cooler_max_height_mm": 170,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "Fractal",
-    "logo": "/assets/images/fractal.svg",
-    "id": "fractal_design_meshify_c_7",
-    "released_year": 2025,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "Fractal Design Meshify C",
-    "gpu_max_length_mm": 315,
-    "cooler_max_height_mm": 170,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "Fractal",
-    "logo": "/assets/images/fractal.svg",
-    "id": "fractal_design_meshify_c_8",
-    "released_year": 2024,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  },
-  {
-    "name": "Fractal Design Meshify C",
-    "gpu_max_length_mm": 315,
-    "cooler_max_height_mm": 170,
-    "form_factors": ["ATX", "mATX", "ITX"],
-    "brand": "Fractal",
-    "logo": "/assets/images/fractal.svg",
-    "id": "fractal_design_meshify_c_9",
-    "released_year": 2024,
-    "cooler_max_height_mm": 160,
-    "radiator_mount_size_mm": 280
-  }
+    {
+        "name": "Fractal Design Meshify C",
+        "gpu_max_length_mm": 315,
+        "form_factors": [
+            "ATX",
+            "mATX",
+            "ITX"
+        ],
+        "brand": "Fractal",
+        "logo": "\/assets\/images\/fractal.svg",
+        "id": "fractal_design_meshify_c_2",
+        "released_year": 202,
+        "cooler_max_height_mm": 160,
+        "radiator_mount_size_mm": 280
+    },
+    {
+        "name": "Fractal Design Meshify C",
+        "gpu_max_length_mm": 315,
+        "form_factors": [
+            "ATX",
+            "mATX",
+            "ITX"
+        ],
+        "brand": "Fractal",
+        "logo": "\/assets\/images\/fractal.svg",
+        "id": "fractal_design_meshify_c_3",
+        "released_year": 2023,
+        "cooler_max_height_mm": 160,
+        "radiator_mount_size_mm": 280
+    },
+    {
+        "name": "Fractal Design Meshify C",
+        "gpu_max_length_mm": 315,
+        "form_factors": [
+            "ATX",
+            "mATX",
+            "ITX"
+        ],
+        "brand": "Fractal",
+        "logo": "\/assets\/images\/fractal.svg",
+        "id": "fractal_design_meshify_c_4",
+        "released_year": 2024,
+        "cooler_max_height_mm": 160,
+        "radiator_mount_size_mm": 280
+    },
+    {
+        "name": "NZXT H510",
+        "gpu_max_length_mm": 381,
+        "form_factors": [
+            "ATX",
+            "mATX",
+            "ITX"
+        ],
+        "brand": "NZXT",
+        "logo": "\/assets\/images\/nzxt.svg",
+        "id": "nzxt_h510_5",
+        "released_year": 2024,
+        "cooler_max_height_mm": 160,
+        "radiator_mount_size_mm": 280
+    },
+    {
+        "name": "NZXT H510",
+        "gpu_max_length_mm": 381,
+        "form_factors": [
+            "ATX",
+            "mATX",
+            "ITX"
+        ],
+        "brand": "NZXT",
+        "logo": "\/assets\/images\/nzxt.svg",
+        "id": "nzxt_h510_6",
+        "released_year": 2025,
+        "cooler_max_height_mm": 160,
+        "radiator_mount_size_mm": 280
+    },
+    {
+        "name": "Fractal Design Meshify C",
+        "gpu_max_length_mm": 315,
+        "form_factors": [
+            "ATX",
+            "mATX",
+            "ITX"
+        ],
+        "brand": "Fractal",
+        "logo": "\/assets\/images\/fractal.svg",
+        "id": "fractal_design_meshify_c_7",
+        "released_year": 2025,
+        "cooler_max_height_mm": 160,
+        "radiator_mount_size_mm": 280
+    },
+    {
+        "name": "Fractal Design Meshify C",
+        "gpu_max_length_mm": 315,
+        "form_factors": [
+            "ATX",
+            "mATX",
+            "ITX"
+        ],
+        "brand": "Fractal",
+        "logo": "\/assets\/images\/fractal.svg",
+        "id": "fractal_design_meshify_c_8",
+        "released_year": 2024,
+        "cooler_max_height_mm": 160,
+        "radiator_mount_size_mm": 280
+    },
+    {
+        "name": "Fractal Design Meshify C",
+        "gpu_max_length_mm": 315,
+        "form_factors": [
+            "ATX",
+            "mATX",
+            "ITX"
+        ],
+        "brand": "Fractal",
+        "logo": "\/assets\/images\/fractal.svg",
+        "id": "fractal_design_meshify_c_9",
+        "released_year": 2024,
+        "cooler_max_height_mm": 160,
+        "radiator_mount_size_mm": 280
+    }
 ]

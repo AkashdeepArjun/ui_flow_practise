@@ -1,0 +1,36 @@
+{
+  "name": {
+    "label": "PSU MODEL",
+    "type": "text"
+  },
+  "wattage": {
+    "label": "WATTAGE",
+    "type": "NUMBER"
+  },
+  "efficiency": {
+    "label": "EFFICIENCY",
+    "type": "select",
+    "options": ["80+Gold", "90+Gold"]
+  },
+  "brand": {
+    "label": "BRAND",
+    "type": "text"
+  },
+  "id": {
+    "label": "ID",
+    "type": "text"
+  },
+  "connectors": {
+    "label": "Connectors",
+    "type": "select",
+    "options": ["8-pin", "16-pin"]
+  },
+  "released_year": {
+    "label": "RELEASED YEAR",
+    "type": "date"
+  },
+  "price": {
+    "label": "PRICE",
+    "type": "number"
+  }
+}

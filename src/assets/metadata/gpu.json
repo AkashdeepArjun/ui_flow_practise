@@ -1,0 +1,40 @@
+{
+  "name": {
+    "label": "GPU MODEL",
+    "type": "text"
+  },
+  "pci_version": {
+    "label": "PCI_VERSION",
+    "type": "select",
+    "options": ["4.0", "5.0"]
+  },
+  "length_mm": {
+    "label": "LENGTH (in mm)",
+    "type": "number"
+  },
+  "brand": {
+    "label": "BRAND",
+    "type": "text"
+  },
+  "required_wattage": {
+    "label": "REQUIRED WATTAGE",
+    "type": "number"
+  },
+  "required_connector": {
+    "label": "REQUIRED CONNECTOR",
+    "type": "select",
+    "options": ["8-pin", "16-pin"]
+  },
+  "tdp": {
+    "label": "TDP",
+    "type": "number"
+  },
+  "released_year": {
+    "label": "RELEASED YEAR",
+    "type": "date"
+  },
+  "price": {
+    "label": "PRICE",
+    "type": "number"
+  }
+}

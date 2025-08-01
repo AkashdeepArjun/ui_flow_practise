@@ -1,8 +1,7 @@
 <?php
-
 $css_file=BASE_URL.'/assets/css/add_product.css';
 $css_ver=file_exists($css_file)?filemtime($css_file):time();
-$js_file=BASE_URL.'/assets/js/add_product.js'>
+$js_file=BASE_URL.'/assets/js/add_product.js';
 $js_ver=file_exists($js_file)?filemtime($js_file):time();
 
 ?>

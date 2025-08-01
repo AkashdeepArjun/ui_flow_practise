@@ -1,0 +1,39 @@
+{
+  "name": {
+    "label": "CASE MODEL",
+    "type": "text"
+  },
+  "gpu_max_length_mm": {
+    "label": "GPU MAX LENGTH SUPPORT (IN MM )",
+    "type": "number"
+  },
+  "cooler_max_height_mm": {
+    "label": "COOLER MAX LENGTH SUPPORT",
+    "type": "number"
+  },
+  "form_factors": {
+    "label": "FORM FACTOR",
+    "type": "checkbox",
+    "options": ["ATX", "mATX", "ITX"]
+  },
+  "brand": {
+    "label": "BRAND",
+    "type": "text"
+  },
+  "id": {
+    "label": "ID",
+    "type": "text"
+  },
+  "radiator_mount_size_mm": {
+    "label": "RADIATOR MOUNT SIZE",
+    "type": "number"
+  },
+  "released_year": {
+    "label": "RELEASED",
+    "type": "date"
+  },
+  "price": {
+    "label": "PRICE",
+    "type": "number"
+  }
+}

@@ -62,5 +62,21 @@
         "pci_lanes": 20,
         "id": "intel_core_i9-14900k_8",
         "released_year": 2022
+    },
+    {
+        "name": "AMD Ryzen 9 7950X",
+        "socket": "AM5",
+        "has_igpu": false,
+        "brand": "AMD",
+        "logo": "\/assets\/images\/amd.svg",
+        "tdp": 170,
+        "chipsets": [
+            "X670",
+            "B650"
+        ],
+        "cooler_mount": "AM5",
+        "pci_lanes": 24,
+        "id": "amd_ryzen_9_7950x_9",
+        "released_year": 2023
     }
 ]

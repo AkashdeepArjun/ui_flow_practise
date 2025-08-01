@@ -1,24 +1,16 @@
 [
-  {
-    "id": "cooler1",
-    "name": "Cooler Master Hyper 212 Black",
-    "type": "air",
-    "brand": "Cooler Master",
-    "supported_sockets": ["LGA1700", "AM5"],
-    "cooling_capacity_tdp": 180,
-    "height_mm": 159,
-    "logo": "/assets/images/coolermaster.svg",
-    "released_year": 2022
-  },
-  {
-    "id": "cooler2",
-    "name": "NZXT Kraken X63",
-    "type": "liquid",
-    "brand": "NZXT",
-    "supported_sockets": ["LGA1700", "AM5"],
-    "cooling_capacity_tdp": 250,
-    "radiator_size_mm": 280,
-    "logo": "/assets/images/nzxt.svg",
-    "released_year": 2023
-  }
+    {
+        "id": "cooler1",
+        "name": "Cooler Master Hyper 212 Black",
+        "type": "air",
+        "brand": "Cooler Master",
+        "supported_sockets": [
+            "LGA1700",
+            "AM5"
+        ],
+        "cooling_capacity_tdp": 180,
+        "height_mm": 159,
+        "logo": "\/assets\/images\/coolermaster.svg",
+        "released_year": 2022
+    }
 ]

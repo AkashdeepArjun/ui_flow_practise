@@ -1,92 +1,11 @@
 [
-  {
-    "name": "Corsair Vengeance DDR5 32GB",
-    "type": "DDR5",
-    "speed_mhz": 6000,
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_vengeance_ddr5_32gb_0",
-    "released_year": 2024
-  },
-  {
-    "name": "G.Skill Ripjaws DDR4 16GB",
-    "type": "DDR4",
-    "speed_mhz": 3600,
-    "brand": "G.Skill",
-    "logo": "/assets/images/gskill.svg",
-    "id": "g.skill_ripjaws_ddr4_16gb_1",
-    "released_year": 2022
-  },
-  {
-    "name": "Corsair Vengeance DDR5 32GB",
-    "type": "DDR5",
-    "speed_mhz": 6000,
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_vengeance_ddr5_32gb_2",
-    "released_year": 2025
-  },
-  {
-    "name": "Corsair Vengeance DDR5 32GB",
-    "type": "DDR5",
-    "speed_mhz": 6000,
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_vengeance_ddr5_32gb_3",
-    "released_year": 2024
-  },
-  {
-    "name": "G.Skill Ripjaws DDR4 16GB",
-    "type": "DDR4",
-    "speed_mhz": 3600,
-    "brand": "G.Skill",
-    "logo": "/assets/images/gskill.svg",
-    "id": "g.skill_ripjaws_ddr4_16gb_4",
-    "released_year": 2024
-  },
-  {
-    "name": "G.Skill Ripjaws DDR4 16GB",
-    "type": "DDR4",
-    "speed_mhz": 3600,
-    "brand": "G.Skill",
-    "logo": "/assets/images/gskill.svg",
-    "id": "g.skill_ripjaws_ddr4_16gb_5",
-    "released_year": 2024
-  },
-  {
-    "name": "Corsair Vengeance DDR5 32GB",
-    "type": "DDR5",
-    "speed_mhz": 6000,
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_vengeance_ddr5_32gb_6",
-    "released_year": 2021
-  },
-  {
-    "name": "G.Skill Ripjaws DDR4 16GB",
-    "type": "DDR4",
-    "speed_mhz": 3600,
-    "brand": "G.Skill",
-    "logo": "/assets/images/gskill.svg",
-    "id": "g.skill_ripjaws_ddr4_16gb_7",
-    "released_year": 2025
-  },
-  {
-    "name": "Corsair Vengeance DDR5 32GB",
-    "type": "DDR5",
-    "speed_mhz": 6000,
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_vengeance_ddr5_32gb_8",
-    "released_year": 2021
-  },
-  {
-    "name": "Corsair Vengeance DDR5 32GB",
-    "type": "DDR5",
-    "speed_mhz": 6000,
-    "brand": "Corsair",
-    "logo": "/assets/images/corsair.svg",
-    "id": "corsair_vengeance_ddr5_32gb_9",
-    "released_year": 2020
-  }
+    {
+        "name": "Corsair Vengeance DDR5 32GB",
+        "type": "DDR5",
+        "speed_mhz": 6000,
+        "brand": "Corsair",
+        "logo": "\/assets\/images\/corsair.svg",
+        "id": "corsair_vengeance_ddr5_32gb_9",
+        "released_year": 2020
+    }
 ]

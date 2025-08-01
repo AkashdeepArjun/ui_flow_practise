@@ -1,6 +1,15 @@
 <?php
 require __DIR__.'/config.php';
 /* require_once PROJECT_ROOT . '/routes/index.php'; */
+function clear_logs(){
+
+    file_put_contents(__DIR__.'/error_log','');
+    
+
+}
+
+
+
 $css_path=BASE_URL.'assets/css/home.css';
 $css_ver=file_exists($css_path)?filemtime($css_path):time();
 $js_path=BASE_URL.'assets/js/router.js';
@@ -8,11 +17,159 @@ $js_ver=file_exists($js_path)?filemtime($js_path):time();
 
 $view = $_GET['dest']??'popular_buids';
 
-
-
-
-
 $partial = isset($_GET['partial']);
+
+if($view==='motherboards' && !$partial){
+    
+    require_once PROJECT_ROOT.'/views/motherboards.php';
+    exit;
+}
+
+
+if($view==='gpus' && !$partial){
+
+    require_once PROJECT_ROOT.'/views/stock_gpu.php';
+    exit;
+
+
+
+}
+
+if($view==='coolants' && !$partial){
+
+    require_once PROJECT_ROOT.'/views/stock_coolant.php';
+    exit;
+}
+
+
+
+
+
+if($view==='rams' && !$partial){
+
+    
+    require_once PROJECT_ROOT.'/views/stock_rams.php';
+    exit;
+
+
+
+}
+
+if($view ==='cpus' && !$partial){
+
+    require_once PROJECT_ROOT.'/views/stock_cpu.php';
+    exit;
+}
+
+
+
+
+
+if($view==='psus' && !$partial){
+
+
+    require_once PROJECT_ROOT.'/views/stock_psu.php';
+    exit;
+
+
+}
+
+if($view ==='cases' && !$partial){
+
+    
+    require_once PROJECT_ROOT.'/views/stock_case.php';
+    exit;
+
+
+}
+
+
+
+
+
+if($view==='ssds' && !$partial){
+
+    require_once PROJECT_ROOT.'/views/stock_ssd.php';
+    exit;
+
+
+}
+
+
+
+if($view==='delete' && !$partial){
+    clear_logs();
+    $file=$_GET["type"];
+    error_log("DELETE REQUEST TYPE WAS FOUND ".$file);
+    $file_absolute_path = __DIR__ . '/assets/data/' .$file.'.json';
+   error_log("PATH IS ".$file_absolute_path); 
+    $target_id = $_GET['id'];
+
+    if(!file_exists($file_absolute_path)){
+
+        echo json_encode([ 'id'=>$target_id,'error'=>'FILE WAS NOT FOUND ','status'=>404]);
+        exit;
+
+    }
+
+    $raw = file_get_contents($file_absolute_path);
+    error_log("FILE WAS ".$raw);
+
+    $parts = json_decode($raw,true);
+
+    
+    $s = file_put_contents(__DIR__.'/assets/data/parts.json',json_encode($parts,JSON_PRETTY_PRINT));
+
+    if($s===false){
+        error_log("DIDNT WWRITE FILE");
+    }
+
+    file_put_contents(__DIR__.'/assets/data/raw.json',json_encode($raw,JSON_PRETTY_PRINT));
+
+    error_log("DECODED WAS ".json_encode($parts,JSON_PRETTY_PRINT));
+        
+    if(!is_array($parts)){
+            
+        echo json_encode(['id'=>$target_id,'error'=>'INVALID JSON FORMAT','status'=>409]);
+        exit;
+
+    }
+
+    $filtered = array_filter($parts,fn($part)=>(string)$part['id']!==(string)$target_id);
+    $filtered = array_values($filtered);
+
+
+    file_put_contents(__DIR__.'/assets/data/filtered.json',json_encode($filtered,JSON_PRETTY_PRINT));
+
+    error_log("FILTERED WAS ".json_encode($filtered,JSON_PRETTY_PRINT));
+
+    $diff = array_diff($parts,$filtered);
+
+    error_log("DIFF WAS " .json_encode($diff,JSON_PRETTY_PRINT));
+
+    /* error_log("DIFFERENCE IS " . print_r($diff)); */
+
+
+    $status = file_put_contents($file_absolute_path,json_encode($filtered,JSON_PRETTY_PRINT));
+    if($status===false){
+        echo json_encode(['id'=>$target_id,'error'=>'COULD NOT WROTE TO FILE']);
+    exit;
+    }else{
+    error_log(" FFILE SAVE STATUS ".$status); 
+     echo json_encode(['id'=>$target_id,'success'=>true]);   
+    exit;
+
+
+    }
+   
+
+}
+
+
+
+
+
+
 if($view==='new_build' && !$partial){
 
     require_once PROJECT_ROOT.'/views/new_build.php';
@@ -25,6 +182,15 @@ if($view==='add_product' && !$partial){
     exit;
 
 }
+
+if($view ==='inventory' && !$partial){
+
+    require_once PROJECT_ROOT.'/views/inventory.php';
+    exit;
+
+
+}
+
 
 if($view === 'save' && !$partial){
 

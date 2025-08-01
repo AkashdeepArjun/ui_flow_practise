@@ -1,0 +1,36 @@
+{
+  "name": {
+    "label": "COOLANT MODEL",
+    "type": "text"
+  },
+  "id": {
+    "label": "ID",
+    "type": "text"
+  },
+  "type": {
+    "label": "COOLANT TYPE",
+    "type": "select",
+    "options": ["air", "liquid"]
+  },
+  "supported_sockets": {
+    "label": "SUPPORTED SOCKETS",
+    "type": "checkbox",
+    "options": ["LGA1700", "AM4"]
+  },
+  "cooling_capacity_tdp": {
+    "label": "COOLING CAPACITY TDP",
+    "type": "number"
+  },
+  "height_mm": {
+    "label": "HEIGHT (in mm)",
+    "type": "number"
+  },
+  "brand": {
+    "label": "BRAND",
+    "type": "text"
+  },
+  "price": {
+    "label": "PRICE",
+    "type": "number"
+  }
+}
